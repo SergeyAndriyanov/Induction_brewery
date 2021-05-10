@@ -1,0 +1,516 @@
+
+Map of Release\heater_v1.st7 from link file Release\heater_v1.lkf - Mon May 10 13:49:03 2021
+
+
+                               --------
+                               Segments
+                               --------
+
+start 0000c000 end 0000cd75 length  3445 segment .text
+start 0000cda3 end 0000cdc6 length    35 segment .const
+start 00000080 end 00000080 length     0 segment .bsct
+start 00000080 end 0000008c length    12 segment .ubsct
+start 0000008c end 0000008c length     0 segment .bit
+start 0000008c end 0000008c length     0 segment .share
+start 00000200 end 00000226 length    38 segment .data, initialized
+start 0000cd7d end 0000cda3 length    38 segment .data, from
+start 00000226 end 0000027a length    84 segment .bss
+start 00000000 end 00000408 length  1032 segment .info.
+start 0000ffe0 end 00010000 length    32 segment .const
+start 0000cd75 end 0000cd7d length     8 segment .init
+
+
+                               -------
+                               Modules
+                               -------
+
+C:\Program Files\COSMIC\EVAL_ST7\Lib\crtsx.st7:
+start 0000c000 end 0000c072 length   114 section .text
+start 00000226 end 00000226 length     0 section .bss
+start 00000080 end 00000080 length     0 section .ubsct
+start 00000000 end 0000002e length    46 section .info.
+
+Release\adc.o:
+start 0000c072 end 0000c25b length   489 section .text
+start 00000200 end 00000202 length     2 section .data
+start 0000002e end 00000061 length    51 section .info.
+start 0000cda3 end 0000cdb3 length    16 section .const
+
+Release\isr.o:
+start 0000c25b end 0000c2f7 length   156 section .text
+start 00000202 end 00000208 length     6 section .data
+start 00000226 end 00000266 length    64 section .bss
+start 00000061 end 00000094 length    51 section .info.
+
+Release\sci.o:
+start 0000c2f7 end 0000c4b2 length   443 section .text
+start 00000266 end 0000027a length    20 section .bss
+start 00000094 end 000000c7 length    51 section .info.
+
+Release\hrdw_init.o:
+start 0000c4b2 end 0000c551 length   159 section .text
+start 000000c7 end 00000100 length    57 section .info.
+
+Release\main.o:
+start 0000c551 end 0000cabd length  1388 section .text
+start 00000208 end 00000226 length    30 section .data
+start 00000100 end 00000134 length    52 section .info.
+start 0000cdb3 end 0000cdc6 length    19 section .const
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)ftol.o:
+start 0000cabd end 0000cb4b length   142 section .text
+start 00000134 end 00000162 length    46 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)idiv.o:
+start 0000cb4b end 0000cb89 length    62 section .text
+start 00000162 end 00000190 length    46 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)itof.o:
+start 0000cb89 end 0000cbc1 length    56 section .text
+start 00000190 end 000001be length    46 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)lreg.o:
+start 00000080 end 00000084 length     4 section .ubsct
+start 000001be end 000001ec length    46 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)rtoxl.o:
+start 0000cbc1 end 0000cbe0 length    31 section .text
+start 000001ec end 0000021b length    47 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)udiv.o:
+start 0000cbe0 end 0000cc1f length    63 section .text
+start 0000021b end 00000249 length    46 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)uitof.o:
+start 0000cc1f end 0000cc4b length    44 section .text
+start 00000249 end 00000278 length    47 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)xreg.o:
+start 00000084 end 00000086 length     2 section .ubsct
+start 00000278 end 000002a6 length    46 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)fmul.o:
+start 0000cc4b end 0000cd3c length   241 section .text
+start 000002a6 end 000002d4 length    46 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)lacc.o:
+start 00000086 end 0000008a length     4 section .ubsct
+start 000002d4 end 00000302 length    46 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)load.o:
+start 0000cd3c end 0000cd59 length    29 section .text
+start 00000302 end 00000330 length    46 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)xltor.o:
+start 0000cd59 end 0000cd74 length    27 section .text
+start 00000330 end 0000035f length    47 section .info.
+
+(C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)yreg.o:
+start 0000008a end 0000008c length     2 section .ubsct
+start 0000035f end 0000038d length    46 section .info.
+
+Release\interrupt_vector.o:
+start 0000cd74 end 0000cd75 length     1 section .text
+start 0000038d end 000003cd length    64 section .info.
+start 0000ffe0 end 00010000 length    32 section .const
+
+
+                             -----------
+                             Stack usage
+                             -----------
+
+Release\adc.o:
+_adc_measure_run          17   (11)
+
+Release\hrdw_init.o:
+_adc_init                  2   (2)
+_delay_nop                 4   (4)
+_isr_prior_set             2   (2)
+_port_gpio_init            2   (2)
+_pwm_init                  2   (2)
+_rtc_init                  2   (2)
+_sci_init                  2   (2)
+
+Release\interrupt_vector.o:
+_NonHandledInterrupt  >    5   (5)
+
+Release\isr.o:
+_PB_isr_ei2           >    5   (5)
+_PB_isr_ei3           >    5   (5)
+_RTC_is               >    6   (6)
+_SCI_Receive_is       >    6   (6)
+
+Release\main.o:
+_main                 >   25   (8)
+
+Release\sci.o:
+_SCI_Send                  9   (7)
+_crc_chk                   9   (9)
+_sci_tx                    2   (2)
+_serialinterfacepc        13   (4)
+
+Stack size: 31
+
+
+                              ---------
+                              Call tree
+                              ---------
+   1 > _NonHandledInterrupt: (5)
+
+   2 > _PB_isr_ei2: (5)
+
+   3 > _PB_isr_ei3: (5)
+
+   4 > _RTC_is: (6)
+
+   5 > _SCI_Receive_is: (6)
+
+   6 > __stext: (0)
+
+   7 > _main: (8)
+   8      + _adc_init: (2)
+   9      + _adc_measure_run: (11)
+  10      + _delay_nop: (4)
+  11      + _isr_prior_set: (2)
+  12      + _port_gpio_init: (2)
+  13      + _pwm_init: (2)
+  14      + _rtc_init: (2)
+  15      + _sci_init: (2)
+  16      + _serialinterfacepc: (4)
+  17      |    + _SCI_Send: (7)
+  18      |    |    + _sci_tx: (2)
+          |    | 
+  19      |    + _crc_chk: (9)
+          | 
+       
+  20   _SCI_Send --> 17
+
+  21   _adc_init --> 8
+
+  22   _adc_measure_run --> 9
+
+  23   _crc_chk --> 19
+
+  24   _delay_nop --> 10
+
+  25   _isr_prior_set --> 11
+
+  26   _port_gpio_init --> 12
+
+  27   _pwm_init --> 13
+
+  28   _rtc_init --> 14
+
+  29   _sci_init --> 15
+
+  30   _sci_tx --> 18
+
+  31   _serialinterfacepc --> 16
+
+
+
+                               -------
+                               Symbols
+                               -------
+
+_ADCCSR                00000070   defined in Release\adc.o
+_ADCDR                 00000071   defined in Release\adc.o
+                                  *** not used ***
+_ADCDRH                00000071   defined in Release\adc.o
+_ADCDRL                00000072   defined in Release\adc.o
+_EICR                  00000028   defined in Release\adc.o
+                                  *** not used ***
+_FCSR                  00000029   defined in Release\adc.o
+                                  *** not used ***
+_ITSPR0                00000024   defined in Release\adc.o
+                                  *** not used ***
+_ITSPR1                00000025   defined in Release\adc.o
+                                  *** not used ***
+_ITSPR2                00000026   defined in Release\adc.o
+                                  *** not used ***
+_ITSPR3                00000027   defined in Release\adc.o
+                                  *** not used ***
+_MCCBCR                0000002d   defined in Release\adc.o
+                                  *** not used ***
+_MCCSR                 0000002c   defined in Release\adc.o
+                                  *** not used ***
+_NonHandledInterrupt   0000cd74   defined in Release\interrupt_vector.o section .text
+_PADDR                 00000001   defined in Release\adc.o
+                                  *** not used ***
+_PADR                  00000000   defined in Release\adc.o
+                                  *** not used ***
+_PAOR                  00000002   defined in Release\adc.o
+                                  *** not used ***
+_PBDDR                 00000004   defined in Release\adc.o
+                                  *** not used ***
+_PBDR                  00000003   defined in Release\adc.o
+                                  *** not used ***
+_PBOR                  00000005   defined in Release\adc.o
+                                  *** not used ***
+_PB_isr_ei2            0000c2df   defined in Release\isr.o section .text
+                                  used in Release\interrupt_vector.o
+_PB_isr_ei3            0000c2eb   defined in Release\isr.o section .text
+                                  used in Release\interrupt_vector.o
+_PCDDR                 00000007   defined in Release\adc.o
+                                  *** not used ***
+_PCDR                  00000006   defined in Release\adc.o
+                                  *** not used ***
+_PCOR                  00000008   defined in Release\adc.o
+                                  *** not used ***
+_PDDDR                 0000000a   defined in Release\adc.o
+                                  *** not used ***
+_PDDR                  00000009   defined in Release\adc.o
+                                  *** not used ***
+_PDOR                  0000000b   defined in Release\adc.o
+                                  *** not used ***
+_PEDDR                 0000000d   defined in Release\adc.o
+                                  *** not used ***
+_PEDR                  0000000c   defined in Release\adc.o
+                                  *** not used ***
+_PEOR                  0000000e   defined in Release\adc.o
+                                  *** not used ***
+_PFDDR                 00000010   defined in Release\adc.o
+                                  *** not used ***
+_PFDR                  0000000f   defined in Release\adc.o
+_PFOR                  00000011   defined in Release\adc.o
+                                  *** not used ***
+_RTC_is                0000c25b   defined in Release\isr.o section .text
+                                  used in Release\interrupt_vector.o
+_SCIBRR                00000052   defined in Release\adc.o
+                                  *** not used ***
+_SCICR1                00000053   defined in Release\adc.o
+                                  *** not used ***
+_SCICR2                00000054   defined in Release\adc.o
+                                  *** not used ***
+_SCIDR                 00000051   defined in Release\adc.o
+                                  *** not used ***
+_SCIERPR               00000055   defined in Release\adc.o
+                                  *** not used ***
+_SCIETPR               00000057   defined in Release\adc.o
+                                  *** not used ***
+_SCISR                 00000050   defined in Release\adc.o
+                                  *** not used ***
+_SCI_Receive_is        0000c28e   defined in Release\isr.o section .text
+                                  used in Release\interrupt_vector.o
+_SCI_Send              0000c2fd   defined in Release\sci.o section .text
+_SICSR                 0000002b   defined in Release\adc.o
+                                  *** not used ***
+_SPICR                 00000022   defined in Release\adc.o
+                                  *** not used ***
+_SPICSR                00000023   defined in Release\adc.o
+                                  *** not used ***
+_SPIDR                 00000021   defined in Release\adc.o
+                                  *** not used ***
+_TAACHR                0000003a   defined in Release\adc.o
+                                  *** not used ***
+_TAACLR                0000003b   defined in Release\adc.o
+                                  *** not used ***
+_TAACR                 0000003a   defined in Release\adc.o
+                                  *** not used ***
+_TACHR                 00000038   defined in Release\adc.o
+                                  *** not used ***
+_TACLR                 00000039   defined in Release\adc.o
+                                  *** not used ***
+_TACR                  00000038   defined in Release\adc.o
+                                  *** not used ***
+_TACR1                 00000032   defined in Release\adc.o
+                                  *** not used ***
+_TACR2                 00000031   defined in Release\adc.o
+                                  *** not used ***
+_TACSR                 00000033   defined in Release\adc.o
+                                  *** not used ***
+_TAIC1HR               00000034   defined in Release\adc.o
+                                  *** not used ***
+_TAIC1LR               00000035   defined in Release\adc.o
+                                  *** not used ***
+_TAIC1R                00000034   defined in Release\adc.o
+                                  *** not used ***
+_TAIC2HR               0000003c   defined in Release\adc.o
+                                  *** not used ***
+_TAIC2LR               0000003d   defined in Release\adc.o
+                                  *** not used ***
+_TAIC2R                0000003c   defined in Release\adc.o
+                                  *** not used ***
+_TAOC1HR               00000036   defined in Release\adc.o
+                                  *** not used ***
+_TAOC1LR               00000037   defined in Release\adc.o
+                                  *** not used ***
+_TAOC1R                00000036   defined in Release\adc.o
+                                  *** not used ***
+_TAOC2HR               0000003e   defined in Release\adc.o
+                                  *** not used ***
+_TAOC2LR               0000003f   defined in Release\adc.o
+                                  *** not used ***
+_TAOC2R                0000003e   defined in Release\adc.o
+                                  *** not used ***
+_TBACHR                0000004a   defined in Release\adc.o
+                                  *** not used ***
+_TBACLR                0000004b   defined in Release\adc.o
+                                  *** not used ***
+_TBACR                 0000004a   defined in Release\adc.o
+                                  *** not used ***
+_TBCHR                 00000048   defined in Release\adc.o
+                                  *** not used ***
+_TBCLR                 00000049   defined in Release\adc.o
+                                  *** not used ***
+_TBCR                  00000048   defined in Release\adc.o
+                                  *** not used ***
+_TBCR1                 00000042   defined in Release\adc.o
+                                  *** not used ***
+_TBCR2                 00000041   defined in Release\adc.o
+                                  *** not used ***
+_TBCSR                 00000043   defined in Release\adc.o
+                                  *** not used ***
+_TBIC1HR               00000044   defined in Release\adc.o
+                                  *** not used ***
+_TBIC1LR               00000045   defined in Release\adc.o
+                                  *** not used ***
+_TBIC1R                00000044   defined in Release\adc.o
+                                  *** not used ***
+_TBIC2HR               0000004c   defined in Release\adc.o
+                                  *** not used ***
+_TBIC2LR               0000004d   defined in Release\adc.o
+                                  *** not used ***
+_TBIC2R                0000004c   defined in Release\adc.o
+                                  *** not used ***
+_TBOC1HR               00000046   defined in Release\adc.o
+                                  *** not used ***
+_TBOC1LR               00000047   defined in Release\adc.o
+                                  *** not used ***
+_TBOC1R                00000046   defined in Release\adc.o
+                                  *** not used ***
+_TBOC2HR               0000004e   defined in Release\adc.o
+                                  *** not used ***
+_TBOC2LR               0000004f   defined in Release\adc.o
+                                  *** not used ***
+_TBOC2R                0000004e   defined in Release\adc.o
+                                  *** not used ***
+_WDGCR                 0000002a   defined in Release\adc.o
+                                  *** not used ***
+__endmem               0000027f   defined in command file
+                                  *** not used ***
+__endzp                0000008c   defined in command file section .ubsct
+                                  used in C:\Program Files\COSMIC\EVAL_ST7\Lib\crtsx.st7
+__idesc__              0000cd75   defined in linker section .init
+                                  used in C:\Program Files\COSMIC\EVAL_ST7\Lib\crtsx.st7
+__memory               0000027a   defined in command file section .bss
+                                  used in C:\Program Files\COSMIC\EVAL_ST7\Lib\crtsx.st7
+__stack                000001ff   defined in command file
+                                  *** not used ***
+__startmem             0000027a   defined in command file section .bss
+                                  *** not used ***
+__stext                0000c000   defined in C:\Program Files\COSMIC\EVAL_ST7\Lib\crtsx.st7 section .text
+                                  used in Release\interrupt_vector.o
+__vectab               0000ffe0   defined in Release\interrupt_vector.o section .const
+                                  *** not used ***
+_adc_init              0000c508   defined in Release\hrdw_init.o section .text
+                                  used in Release\main.o
+_adc_measure_run       0000c072   defined in Release\adc.o section .text
+                                  used in Release\main.o
+_crc_chk               0000c417   defined in Release\sci.o section .text
+_delay_nop             0000c535   defined in Release\hrdw_init.o section .text
+                                  used in Release\main.o
+_detectlowcurent1      0000021f   defined in Release\main.o section .data, initialized
+_detectlowcurent2      00000223   defined in Release\main.o section .data, initialized
+_exit                  0000c070   defined in C:\Program Files\COSMIC\EVAL_ST7\Lib\crtsx.st7 section .text
+_flagdatardy           00000205   defined in Release\isr.o section .data, initialized
+                                  used in Release\sci.o
+_flagprocess           00000204   defined in Release\isr.o section .data, initialized
+_freqdetectind1        0000021e   defined in Release\main.o section .data, initialized
+_freqdetectind2        00000221   defined in Release\main.o section .data, initialized
+_ind1                  0000020c   defined in Release\main.o section .data, initialized
+                                  used in Release\isr.o
+_ind1testend           0000020a   defined in Release\main.o section .data, initialized
+_ind2                  0000020d   defined in Release\main.o section .data, initialized
+                                  used in Release\isr.o
+_ind2testend           0000020b   defined in Release\main.o section .data, initialized
+_inductor1_curent      0000021c   defined in Release\main.o section .data, initialized
+_inductor2_curent      00000222   defined in Release\main.o section .data, initialized
+_inductorcurent        0000cdb3   defined in Release\main.o section .const
+_isr_prior_set         0000c4eb   defined in Release\hrdw_init.o section .text
+                                  used in Release\main.o
+_main                  0000c551   defined in Release\main.o section .text
+                                  used in C:\Program Files\COSMIC\EVAL_ST7\Lib\crtsx.st7
+_numbitrec             00000203   defined in Release\isr.o section .data, initialized
+                                  used in Release\sci.o
+_owertempind1_igbt1    00000208   defined in Release\main.o section .data, initialized
+_owertempind2_igbt2    00000209   defined in Release\main.o section .data, initialized
+_pandetectind1         0000021d   defined in Release\main.o section .data, initialized
+_pandetectind2         00000220   defined in Release\main.o section .data, initialized
+_port_gpio_init        0000c4b2   defined in Release\hrdw_init.o section .text
+                                  used in Release\main.o
+_pwm_init              0000c50d   defined in Release\hrdw_init.o section .text
+                                  used in Release\main.o
+_rtc_init              0000c4e4   defined in Release\hrdw_init.o section .text
+                                  used in Release\main.o
+_sci_init              0000c4d7   defined in Release\hrdw_init.o section .text
+                                  used in Release\main.o
+_sci_tx                0000c2f7   defined in Release\sci.o section .text
+_selectchtempigbt      00000200   defined in Release\adc.o section .data, initialized
+_serialinterfacepc     0000c345   defined in Release\sci.o section .text
+                                  used in Release\main.o
+_serout                00000266   defined in Release\sci.o section .bss
+                                  used in Release\adc.o Release\main.o
+_stepgetstatus1        00000224   defined in Release\main.o section .data, initialized
+_stepgetstatus2        00000225   defined in Release\main.o section .data, initialized
+_temparrayrec          00000226   defined in Release\isr.o section .bss
+                                  used in Release\sci.o
+_time12ms              00000210   defined in Release\main.o section .data, initialized
+_time1536ms            0000021a   defined in Release\main.o section .data, initialized
+_time384ms             00000216   defined in Release\main.o section .data, initialized
+_time48ms              00000212   defined in Release\main.o section .data, initialized
+_time4ms               0000020e   defined in Release\main.o section .data, initialized
+_time768ms             00000218   defined in Release\main.o section .data, initialized
+_time96ms              00000214   defined in Release\main.o section .data, initialized
+_timecounterrtc        00000206   defined in Release\isr.o section .data, initialized
+                                  used in Release\main.o
+_timereceive           00000202   defined in Release\isr.o section .data, initialized
+c_fmul                 0000cc57   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)fmul.o section .text
+                                  *** not used ***
+c_ftoi                 0000cabd   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)ftol.o section .text
+                                  used in Release\adc.o Release\main.o
+c_ftol                 0000cac4   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)ftol.o section .text
+c_idiv                 0000cb4b   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)idiv.o section .text
+                                  used in Release\main.o
+c_itof                 0000cb89   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)itof.o section .text
+                                  used in Release\adc.o Release\main.o
+c_lacc                 00000086   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)lacc.o section .ubsct
+                                  used in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)fmul.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)load.o
+c_load                 0000cd3c   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)load.o section .text
+                                  used in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)fmul.o
+c_lreg                 00000080   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)lreg.o section .ubsct
+                                  used in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)ftol.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)itof.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)rtoxl.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)uitof.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)fmul.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)xltor.o
+c_rtoxl                0000cbc1   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)rtoxl.o section .text
+                                  used in Release\adc.o
+c_rtoxl2               0000cbc3   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)rtoxl.o section .text
+                                  *** not used ***
+c_udiv                 0000cbe0   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)udiv.o section .text
+                                  used in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)idiv.o
+c_uitof                0000cc1f   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)uitof.o section .text
+                                  used in Release\adc.o
+c_x                    00000084   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)xreg.o section .ubsct
+                                  used in C:\Program Files\COSMIC\EVAL_ST7\Lib\crtsx.st7
+                                          Release\adc.o Release\sci.o
+                                          Release\main.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)rtoxl.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)udiv.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)fmul.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)load.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)xltor.o
+c_xfmul                0000cc4b   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)fmul.o section .text
+                                  used in Release\adc.o Release\main.o
+c_xltor                0000cd59   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)xltor.o section .text
+                                  used in Release\adc.o
+c_xltor2               0000cd5b   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)xltor.o section .text
+                                  *** not used ***
+c_y                    0000008a   defined in (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)yreg.o section .ubsct
+                                  used in C:\Program Files\COSMIC\EVAL_ST7\Lib\crtsx.st7
+                                          Release\sci.o Release\main.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)idiv.o
+                                          (C:\Program Files\COSMIC\EVAL_ST7\Lib\libm.st7)udiv.o

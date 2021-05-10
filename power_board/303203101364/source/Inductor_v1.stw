@@ -1,0 +1,12 @@
+;	STMicroelectronics Workspace file
+
+[Version]
+Keyword=ST7Workspace-V0.7
+
+[Project0]
+Filename=heater_v1.stp
+Dependencies=
+[Options]
+ActiveProject=heater_v1
+ActiveConfig=Release
+AddSortedElements=0

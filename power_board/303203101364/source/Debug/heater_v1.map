@@ -1,0 +1,290 @@
+
+Map of Debug\heater_v1.st7 from link file Debug\heater_v1.lkf - Thu Jun 25 19:12:25 2020
+
+
+                               --------
+                               Segments
+                               --------
+
+start 0000c000 end 0000c2dc length   732 segment .text
+start 0000c302 end 0000c31a length    24 segment .const
+start 00000080 end 0000009e length    30 segment .bsct, initialized
+start 0000c2e4 end 0000c302 length    30 segment .bsct, from
+start 0000009e end 000000a6 length     8 segment .ubsct
+start 000000a6 end 000000a6 length     0 segment .bit
+start 000000a6 end 000000a7 length     1 segment .share
+start 00000200 end 00000200 length     0 segment .data
+start 00000200 end 00000200 length     0 segment .bss
+start 00000000 end 00000286 length   646 segment .info.
+start 00000000 end 000021f3 length  8691 segment .debug
+start 0000ffe0 end 00010000 length    32 segment .const
+start 0000c2dc end 0000c2e4 length     8 segment .init
+
+
+                               -------
+                               Modules
+                               -------
+
+C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\crtsi.st7:
+start 0000c000 end 0000c049 length    73 section .text
+start 0000009e end 0000009e length     0 section .ubsct
+start 00000000 end 0000002e length    46 section .info.
+
+Debug\isr.o:
+start 0000c049 end 0000c1b3 length   362 section .text
+start 00000080 end 0000009e length    30 section .bsct
+start 00000000 end 00000b90 length  2960 section .debug
+start 0000002e end 0000005f length    49 section .info.
+start 0000c302 end 0000c31a length    24 section .const
+
+Debug\sci.o:
+start 0000c1b3 end 0000c1c7 length    20 section .text
+start 00000b90 end 0000159a length  2570 section .debug
+start 0000005f end 00000090 length    49 section .info.
+
+Debug\hrdw_init.o:
+start 0000c1c7 end 0000c1df length    24 section .text
+start 0000159a end 0000204f length  2741 section .debug
+start 00000090 end 000000c7 length    55 section .info.
+
+Debug\main.o:
+start 0000c1df end 0000c28e length   175 section .text
+start 0000204f end 000020fd length   174 section .debug
+start 000000c7 end 000000f9 length    50 section .info.
+
+(C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)lgadc.o:
+start 0000c28e end 0000c29e length    16 section .text
+start 000000f9 end 00000128 length    47 section .info.
+
+(C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)lreg.o:
+start 0000009e end 000000a2 length     4 section .ubsct
+start 00000128 end 00000156 length    46 section .info.
+
+(C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)ltor.o:
+start 0000c29e end 0000c2ae length    16 section .text
+start 00000156 end 00000184 length    46 section .info.
+
+(C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)xreg.o:
+start 000000a2 end 000000a4 length     2 section .ubsct
+start 00000184 end 000001b2 length    46 section .info.
+
+(C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)xlcmp.o:
+start 0000c2ae end 0000c2db length    45 section .text
+start 000001b2 end 000001e1 length    47 section .info.
+
+(C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)yreg.o:
+start 000000a4 end 000000a6 length     2 section .ubsct
+start 000001e1 end 0000020f length    46 section .info.
+
+Debug\interrupt_vector.o:
+start 0000c2db end 0000c2dc length     1 section .text
+start 000020fd end 000021f3 length   246 section .debug
+start 0000020f end 0000024d length    62 section .info.
+start 0000ffe0 end 00010000 length    32 section .const
+
+
+                             ------------
+                             Shared areas
+                             ------------
+
+Debug\interrupt_vector.o:
+_NonHandledInterrupt >   on stack (5)
+
+Debug\isr.o:
+_RTC_is              >   on stack (12)
+
+Debug\sci.o:
+_sci_tx                  000000a6-000000a6 (0,1) [0]
+
+Stack size: 18
+
+
+                              ---------
+                              Call tree
+                              ---------
+   1 > _NonHandledInterrupt: (5)
+
+   2 > _RTC_is: (12)
+
+   3 > __stext: (0,0)
+
+   4 > _main: (0,0)
+   5      + _isr_prior_set: (0,0)
+   6      + _port_gpio_init: (0,0)
+   7      + _sci_init: (0,0)
+   8      + _sci_tx: (0,1)
+   9      + _timer_init: (0,0)
+       
+  10   _isr_prior_set --> 5
+
+  11   _port_gpio_init --> 6
+
+  12   _sci_init --> 7
+
+  13   _sci_tx --> 8
+
+  14   _timer_init --> 9
+
+
+
+                               -------
+                               Symbols
+                               -------
+
+_ADCCSR                00000070   defined in Debug\isr.o
+_ADCDR                 00000071   defined in Debug\isr.o
+_ADCDRH                00000071   defined in Debug\isr.o
+_ADCDRL                00000072   defined in Debug\isr.o
+_EICR                  00000028   defined in Debug\isr.o
+_FCSR                  00000029   defined in Debug\isr.o
+_ITSPR0                00000024   defined in Debug\isr.o
+_ITSPR1                00000025   defined in Debug\isr.o
+_ITSPR2                00000026   defined in Debug\isr.o
+_ITSPR3                00000027   defined in Debug\isr.o
+_MCCBCR                0000002d   defined in Debug\isr.o
+_MCCSR                 0000002c   defined in Debug\isr.o
+_NonHandledInterrupt   0000c2db   defined in Debug\interrupt_vector.o section .text
+_PADDR                 00000001   defined in Debug\isr.o
+_PADR                  00000000   defined in Debug\isr.o
+_PAOR                  00000002   defined in Debug\isr.o
+_PBDDR                 00000004   defined in Debug\isr.o
+_PBDR                  00000003   defined in Debug\isr.o
+_PBOR                  00000005   defined in Debug\isr.o
+_PCDDR                 00000007   defined in Debug\isr.o
+_PCDR                  00000006   defined in Debug\isr.o
+_PCOR                  00000008   defined in Debug\isr.o
+_PDDDR                 0000000a   defined in Debug\isr.o
+_PDDR                  00000009   defined in Debug\isr.o
+_PDOR                  0000000b   defined in Debug\isr.o
+_PEDDR                 0000000d   defined in Debug\isr.o
+_PEDR                  0000000c   defined in Debug\isr.o
+_PEOR                  0000000e   defined in Debug\isr.o
+_PFDDR                 00000010   defined in Debug\isr.o
+_PFDR                  0000000f   defined in Debug\isr.o
+_PFOR                  00000011   defined in Debug\isr.o
+_RTC_is                0000c049   defined in Debug\isr.o section .text
+                                  used in Debug\interrupt_vector.o
+_SCIBRR                00000052   defined in Debug\isr.o
+_SCICR1                00000053   defined in Debug\isr.o
+_SCICR2                00000054   defined in Debug\isr.o
+_SCIDR                 00000051   defined in Debug\isr.o
+_SCIERPR               00000055   defined in Debug\isr.o
+_SCIETPR               00000057   defined in Debug\isr.o
+_SCISR                 00000050   defined in Debug\isr.o
+_SICSR                 0000002b   defined in Debug\isr.o
+_SPICR                 00000022   defined in Debug\isr.o
+_SPICSR                00000023   defined in Debug\isr.o
+_SPIDR                 00000021   defined in Debug\isr.o
+_TAACHR                0000003a   defined in Debug\isr.o
+_TAACLR                0000003b   defined in Debug\isr.o
+_TAACR                 0000003a   defined in Debug\isr.o
+_TACHR                 00000038   defined in Debug\isr.o
+_TACLR                 00000039   defined in Debug\isr.o
+_TACR                  00000038   defined in Debug\isr.o
+_TACR1                 00000032   defined in Debug\isr.o
+_TACR2                 00000031   defined in Debug\isr.o
+_TACSR                 00000033   defined in Debug\isr.o
+_TAIC1HR               00000034   defined in Debug\isr.o
+_TAIC1LR               00000035   defined in Debug\isr.o
+_TAIC1R                00000034   defined in Debug\isr.o
+_TAIC2HR               0000003c   defined in Debug\isr.o
+_TAIC2LR               0000003d   defined in Debug\isr.o
+_TAIC2R                0000003c   defined in Debug\isr.o
+_TAOC1HR               00000036   defined in Debug\isr.o
+_TAOC1LR               00000037   defined in Debug\isr.o
+_TAOC1R                00000036   defined in Debug\isr.o
+_TAOC2HR               0000003e   defined in Debug\isr.o
+_TAOC2LR               0000003f   defined in Debug\isr.o
+_TAOC2R                0000003e   defined in Debug\isr.o
+_TBACHR                0000004a   defined in Debug\isr.o
+_TBACLR                0000004b   defined in Debug\isr.o
+_TBACR                 0000004a   defined in Debug\isr.o
+_TBCHR                 00000048   defined in Debug\isr.o
+_TBCLR                 00000049   defined in Debug\isr.o
+_TBCR                  00000048   defined in Debug\isr.o
+_TBCR1                 00000042   defined in Debug\isr.o
+_TBCR2                 00000041   defined in Debug\isr.o
+_TBCSR                 00000043   defined in Debug\isr.o
+_TBIC1HR               00000044   defined in Debug\isr.o
+_TBIC1LR               00000045   defined in Debug\isr.o
+_TBIC1R                00000044   defined in Debug\isr.o
+_TBIC2HR               0000004c   defined in Debug\isr.o
+_TBIC2LR               0000004d   defined in Debug\isr.o
+_TBIC2R                0000004c   defined in Debug\isr.o
+_TBOC1HR               00000046   defined in Debug\isr.o
+_TBOC1LR               00000047   defined in Debug\isr.o
+_TBOC1R                00000046   defined in Debug\isr.o
+_TBOC2HR               0000004e   defined in Debug\isr.o
+_TBOC2LR               0000004f   defined in Debug\isr.o
+_TBOC2R                0000004e   defined in Debug\isr.o
+_WDGCR                 0000002a   defined in Debug\isr.o
+__endmem               0000027f   defined in command file
+                                  *** not used ***
+__endzp                000000a6   defined in command file section .ubsct
+                                  used in C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\crtsi.st7
+__idesc__              0000c2dc   defined in linker section .init
+                                  used in C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\crtsi.st7
+__memory               00000200   defined in command file section .bss
+                                  *** not used ***
+__stack                000001ff   defined in command file
+                                  *** not used ***
+__startmem             00000200   defined in command file section .bss
+                                  *** not used ***
+__stext                0000c000   defined in C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\crtsi.st7 section .text
+                                  used in Debug\interrupt_vector.o
+__vectab               0000ffe0   defined in Debug\interrupt_vector.o section .const
+_count_12ms            0000008a   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_count_1536ms          0000009a   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_count_384ms           00000096   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_count_48ms            0000008e   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_count_4ms             00000086   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_count_96ms            00000092   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_exit                  0000c047   defined in C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\crtsi.st7 section .text
+_isr_prior_set         0000c1d8   defined in Debug\hrdw_init.o section .text
+                                  used in Debug\main.o
+_main                  0000c1df   defined in Debug\main.o section .text
+                                  used in C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\crtsi.st7
+_port_gpio_init        0000c1c7   defined in Debug\hrdw_init.o section .text
+                                  used in Debug\main.o
+_sci_init              0000c1c8   defined in Debug\hrdw_init.o section .text
+                                  used in Debug\main.o
+_sci_tx                0000c1b3   defined in Debug\sci.o section .text
+                                  used in Debug\main.o
+_sci_tx$L              000000a6   defined in linker section .share
+                                  used in Debug\sci.o
+_time_12ms             00000081   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_time_1536ms           00000085   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_time_384ms            00000084   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_time_48ms             00000082   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_time_4ms              00000080   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_time_96ms             00000083   defined in Debug\isr.o section .bsct, initialized
+                                  used in Debug\main.o
+_timer_init            0000c1d5   defined in Debug\hrdw_init.o section .text
+                                  used in Debug\main.o
+c_lgadc                0000c28e   defined in (C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)lgadc.o section .text
+                                  used in Debug\isr.o
+c_lreg                 0000009e   defined in (C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)lreg.o section .ubsct
+                                  used in Debug\isr.o
+                                          (C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)ltor.o
+                                          (C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)xlcmp.o
+c_ltor                 0000c29e   defined in (C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)ltor.o section .text
+                                  used in Debug\isr.o
+c_x                    000000a2   defined in (C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)xreg.o section .ubsct
+                                  used in C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\crtsi.st7
+                                          Debug\isr.o
+                                          (C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)xlcmp.o
+c_xlcmp                0000c2ae   defined in (C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)xlcmp.o section .text
+                                  used in Debug\isr.o
+c_y                    000000a4   defined in (C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\libm.st7)yreg.o section .ubsct
+                                  used in C:\Program Files (x86)\COSMIC\EVAL_ST7\Lib\crtsi.st7

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"tchar.h": "c",
+			"stdio.h": "c",
+			"wchar.h": "c",
+			"spi_common.h": "c",
+			"task.h": "c",
+			"math.h": "c",
+			"cmath": "c",
+			"complex": "c"
+		}
+	}
+}

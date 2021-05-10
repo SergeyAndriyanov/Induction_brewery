@@ -1,0 +1,360 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADC_CURRENT_INDUCT1_CH	hrdw_init.h	107;"	macro
+ADC_CURRENT_INDUCT2_CH	hrdw_init.h	108;"	macro
+ADC_EOC	hrdw_init.h	98;"	macro
+ADC_I_IND1_MUL_KOEFF	adc.h	7;"	macro
+ADC_I_IND2_MUL_KOEFF	adc.h	8;"	macro
+ADC_MASK_CH	hrdw_init.h	101;"	macro
+ADC_MAX_COD_PANEL1	adc.h	11;"	macro
+ADC_MAX_COD_PANEL2	adc.h	12;"	macro
+ADC_ON	hrdw_init.h	100;"	macro
+ADC_RT1_PORT	hrdw_init.h	117;"	macro
+ADC_RT1_RELEASE	hrdw_init.h	114;"	macro
+ADC_RT1_SELECT	hrdw_init.h	111;"	macro
+ADC_RT2_PORT	hrdw_init.h	118;"	macro
+ADC_RT2_RELEASE	hrdw_init.h	115;"	macro
+ADC_RT2_SELECT	hrdw_init.h	112;"	macro
+ADC_SPEED	hrdw_init.h	99;"	macro
+ADC_TEMPER_IGBT_1_2_CH	hrdw_init.h	104;"	macro
+ADC_TEMPER_INDUCT1_CH	hrdw_init.h	105;"	macro
+ADC_TEMPER_INDUCT2_CH	hrdw_init.h	106;"	macro
+ADC_VOLT_CH	hrdw_init.h	103;"	macro
+ADC_VOLT_MUL_KOEFF	adc.h	6;"	macro
+ADRESS_BOARD	hrdw_init.h	15;"	macro
+BR_SCP_1	hrdw_init.h	50;"	macro
+BR_SCP_13	hrdw_init.h	53;"	macro
+BR_SCP_3	hrdw_init.h	51;"	macro
+BR_SCP_4	hrdw_init.h	52;"	macro
+BR_SCR_1	hrdw_init.h	64;"	macro
+BR_SCR_128	hrdw_init.h	71;"	macro
+BR_SCR_16	hrdw_init.h	68;"	macro
+BR_SCR_2	hrdw_init.h	65;"	macro
+BR_SCR_32	hrdw_init.h	69;"	macro
+BR_SCR_4	hrdw_init.h	66;"	macro
+BR_SCR_64	hrdw_init.h	70;"	macro
+BR_SCR_8	hrdw_init.h	67;"	macro
+BR_SCT_1	hrdw_init.h	55;"	macro
+BR_SCT_128	hrdw_init.h	62;"	macro
+BR_SCT_16	hrdw_init.h	59;"	macro
+BR_SCT_2	hrdw_init.h	56;"	macro
+BR_SCT_32	hrdw_init.h	60;"	macro
+BR_SCT_4	hrdw_init.h	57;"	macro
+BR_SCT_64	hrdw_init.h	61;"	macro
+BR_SCT_8	hrdw_init.h	58;"	macro
+CNTR1_BIT_M	hrdw_init.h	28;"	macro
+CNTR1_BIT_PCE	hrdw_init.h	30;"	macro
+CNTR1_BIT_PIE	hrdw_init.h	32;"	macro
+CNTR1_BIT_PS	hrdw_init.h	31;"	macro
+CNTR1_BIT_SCID	hrdw_init.h	27;"	macro
+CNTR1_BIT_WAKE	hrdw_init.h	29;"	macro
+CNTR2_BIT_ILIE	hrdw_init.h	37;"	macro
+CNTR2_BIT_RE	hrdw_init.h	39;"	macro
+CNTR2_BIT_RIE	hrdw_init.h	36;"	macro
+CNTR2_BIT_RWU	hrdw_init.h	40;"	macro
+CNTR2_BIT_SBK	hrdw_init.h	41;"	macro
+CNTR2_BIT_TCIE	hrdw_init.h	35;"	macro
+CNTR2_BIT_TE	hrdw_init.h	38;"	macro
+CNTR2_BIT_TIE	hrdw_init.h	34;"	macro
+INDUCTOR1_FREQ_MAX_COUNT	hrdw_init.h	158;"	macro
+INDUCTOR1_FREQ_YES	hrdw_init.h	151;"	macro
+INDUCTOR1_ON_STATUS	hrdw_init.h	140;"	macro
+INDUCTOR1_PAN_YES	hrdw_init.h	147;"	macro
+INDUCTOR2_FREQ_MAX_COUNT	hrdw_init.h	159;"	macro
+INDUCTOR2_FREQ_YES	hrdw_init.h	152;"	macro
+INDUCTOR2_ON_STATUS	hrdw_init.h	141;"	macro
+INDUCTOR2_PAN_YES	hrdw_init.h	148;"	macro
+INDUCTOR_1_MAX_PWM	hrdw_init.h	196;"	macro
+INDUCTOR_1_OFF	hrdw_init.h	126;"	macro
+INDUCTOR_1_ON	hrdw_init.h	125;"	macro
+INDUCTOR_1_ONOFF_PORT	hrdw_init.h	122;"	macro
+INDUCTOR_1_PERIOD	hrdw_init.h	197;"	macro
+INDUCTOR_1_RUN_PULSE_OFF	hrdw_init.h	132;"	macro
+INDUCTOR_1_RUN_PULSE_ON	hrdw_init.h	131;"	macro
+INDUCTOR_1_RUN_PULSE_PORT	hrdw_init.h	136;"	macro
+INDUCTOR_1_SET_PWM	hrdw_init.h	198;"	macro
+INDUCTOR_2_MAX_PWM	hrdw_init.h	200;"	macro
+INDUCTOR_2_OFF	hrdw_init.h	129;"	macro
+INDUCTOR_2_ON	hrdw_init.h	128;"	macro
+INDUCTOR_2_ONOFF_PORT	hrdw_init.h	123;"	macro
+INDUCTOR_2_PERIOD	hrdw_init.h	201;"	macro
+INDUCTOR_2_RUN_PULSE_OFF	hrdw_init.h	134;"	macro
+INDUCTOR_2_RUN_PULSE_ON	hrdw_init.h	133;"	macro
+INDUCTOR_2_RUN_PULSE_PORT	hrdw_init.h	137;"	macro
+INDUCTOR_2_SET_PWM	hrdw_init.h	202;"	macro
+INTERRUPT_PIN_FALLING	hrdw_init.h	161;"	macro
+INTERRUPT_PIN_RISING	hrdw_init.h	162;"	macro
+MAXARR	isr.h	1;"	macro
+MAXNUMBERCONVERT_ADCTEMPIGBT	adc.h	4;"	macro
+MCCSR_CP_DIV_16	hrdw_init.h	79;"	macro
+MCCSR_CP_DIV_2	hrdw_init.h	76;"	macro
+MCCSR_CP_DIV_4	hrdw_init.h	77;"	macro
+MCCSR_CP_DIV_8	hrdw_init.h	78;"	macro
+MCCSR_MCO	hrdw_init.h	75;"	macro
+MCCSR_OIE	hrdw_init.h	85;"	macro
+MCCSR_OIF	hrdw_init.h	86;"	macro
+MCCSR_SMS	hrdw_init.h	80;"	macro
+MCCSR_TB_16000	hrdw_init.h	81;"	macro
+MCCSR_TB_200000	hrdw_init.h	84;"	macro
+MCCSR_TB_32000	hrdw_init.h	82;"	macro
+MCCSR_TB_80000	hrdw_init.h	83;"	macro
+MCC_ISR_PRIOR_0	hrdw_init.h	93;"	macro
+MCC_ISR_PRIOR_1	hrdw_init.h	92;"	macro
+MCC_ISR_PRIOR_2	hrdw_init.h	91;"	macro
+MCC_ISR_PRIOR_OFF	hrdw_init.h	90;"	macro
+MIN_CURRENT_IND1	hrdw_init.h	143;"	macro
+MIN_CURRENT_IND2	hrdw_init.h	144;"	macro
+NULL	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	9;"	macro
+NonHandledInterrupt	interrupt_vector.c	10;"	function	signature:(void)
+PANEL1_KOF_A	adc.h	13;"	macro
+PANEL1_KOF_B	adc.h	14;"	macro
+PANEL1_KOF_C	adc.h	15;"	macro
+PANEL2_KOF_A	adc.h	16;"	macro
+PANEL2_KOF_B	adc.h	17;"	macro
+PANEL2_KOF_C	adc.h	18;"	macro
+PB_ISR_PRIOR_2	hrdw_init.h	154;"	macro
+PB_isr	isr.c	165;"	function	signature:(void)
+PB_isr	isr.h	11;"	prototype	signature:(void)
+RESISTOR_DIV_PANEL1	adc.h	9;"	macro
+RESISTOR_DIV_PANEL2	adc.h	10;"	macro
+RTC_is	isr.c	34;"	function	signature:(void)
+RTC_is	isr.h	9;"	prototype	signature:(void)
+SCI_BYSY	isr.h	3;"	macro
+SCI_ISR_PRIOR_0	hrdw_init.h	46;"	macro
+SCI_ISR_PRIOR_1	hrdw_init.h	45;"	macro
+SCI_ISR_PRIOR_2	hrdw_init.h	44;"	macro
+SCI_ISR_PRIOR_OFF	hrdw_init.h	43;"	macro
+SCI_Receive_is	isr.c	131;"	function	signature:(void)
+SCI_Receive_is	isr.h	10;"	prototype	signature:(void)
+SCI_Send	sci.c	16;"	function	signature:(unsigned char *SenData,unsigned char num)
+SCI_Send	sci.h	3;"	prototype	signature:(unsigned char *SenData,unsigned char num)
+STATUS_BIT_FE	hrdw_init.h	23;"	macro
+STATUS_BIT_IDLE	hrdw_init.h	20;"	macro
+STATUS_BIT_NF	hrdw_init.h	22;"	macro
+STATUS_BIT_OR	hrdw_init.h	21;"	macro
+STATUS_BIT_PE	hrdw_init.h	24;"	macro
+STATUS_BIT_RDRF	hrdw_init.h	19;"	macro
+STATUS_BIT_TC	hrdw_init.h	18;"	macro
+STATUS_BIT_TDRE	hrdw_init.h	17;"	macro
+TIMEOUTRECEIVE	isr.h	2;"	macro
+TIMER_CC0	hrdw_init.h	184;"	macro
+TIMER_CC1	hrdw_init.h	183;"	macro
+TIMER_EXEDG	hrdw_init.h	186;"	macro
+TIMER_FOLV1	hrdw_init.h	173;"	macro
+TIMER_FOLV2	hrdw_init.h	172;"	macro
+TIMER_ICF1	hrdw_init.h	189;"	macro
+TIMER_ICF2	hrdw_init.h	192;"	macro
+TIMER_ICIE	hrdw_init.h	169;"	macro
+TIMER_IEDG1	hrdw_init.h	175;"	macro
+TIMER_IEDG2	hrdw_init.h	185;"	macro
+TIMER_OC1E	hrdw_init.h	179;"	macro
+TIMER_OC2E	hrdw_init.h	180;"	macro
+TIMER_OCF1	hrdw_init.h	190;"	macro
+TIMER_OCF2	hrdw_init.h	193;"	macro
+TIMER_OCIE	hrdw_init.h	170;"	macro
+TIMER_OLVL1	hrdw_init.h	176;"	macro
+TIMER_OLVL2	hrdw_init.h	174;"	macro
+TIMER_OPM	hrdw_init.h	181;"	macro
+TIMER_PWM	hrdw_init.h	182;"	macro
+TIMER_TIMD	hrdw_init.h	194;"	macro
+TIMER_TOF	hrdw_init.h	191;"	macro
+TIMER_TOIE	hrdw_init.h	171;"	macro
+TSerialOutDat	sci.h	25;"	typedef	typeref:struct:__anon1
+TUOutData	sci.h	32;"	typedef	typeref:union:__anon2
+WATCHDOG_RESET	hrdw_init.h	164;"	macro
+__MODM__	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\modm.h	10;"	macro
+__STRING__	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	6;"	macro
+_stext	interrupt_vector.c	8;"	prototype	file:	signature:(void)
+_vectab	interrupt_vector.c	23;"	variable
+adc_init	hrdw_init.c	61;"	function	signature:(void)
+adc_init	hrdw_init.h	7;"	prototype	signature:(void)
+adc_measure_run	adc.c	11;"	function	signature:(void)
+adc_measure_run	adc.h	20;"	prototype	signature:(void)
+adress	sci.h	9;"	member	struct:__anon1
+buf	sci.h	30;"	member	union:__anon2
+checking_freq_1	main.c	109;"	function	signature:(void)
+checking_freq_1	main.c	8;"	prototype	file:	signature:(void)
+checking_freq_2	main.c	138;"	function	signature:(void)
+checking_freq_2	main.c	9;"	prototype	file:	signature:(void)
+count_12ms	isr.c	27;"	variable
+count_1536ms	isr.c	31;"	variable
+count_384ms	isr.c	30;"	variable
+count_48ms	isr.c	28;"	variable
+count_4ms	isr.c	26;"	variable
+count_96ms	isr.c	29;"	variable
+crc	sci.h	24;"	member	struct:__anon1
+crc_chk	sci.c	63;"	function	signature:(unsigned char* data, unsigned char leng)
+crc_chk	sci.h	5;"	prototype	signature:(unsigned char* data, unsigned char leng)
+delay_nop	hrdw_init.c	85;"	function	signature:(unsigned int t)
+delay_nop	hrdw_init.h	232;"	prototype	signature:(unsigned int t)
+flagdatardy	isr.c	17;"	variable
+flagprocess	isr.c	16;"	variable
+i_inductor_1	sci.h	11;"	member	struct:__anon1
+i_inductor_2	sci.h	12;"	member	struct:__anon1
+ind1	isr.c	11;"	variable
+ind2	isr.c	12;"	variable
+inductor1pwm	sci.h	18;"	member	struct:__anon1
+inductor2pwm	sci.h	19;"	member	struct:__anon1
+isr_prior_set	hrdw_init.c	49;"	function	signature:(void)
+isr_prior_set	hrdw_init.h	6;"	prototype	signature:(void)
+main	main.c	11;"	function	signature:(void)
+memchr	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	30;"	prototype	signature:(void *s, char c, unsigned char n)
+memchr	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	70;"	prototype	signature:(void *s, char c, unsigned int n)
+memcmp	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	24;"	prototype	signature:(void *s1, void *s2, unsigned char n)
+memcmp	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	64;"	prototype	signature:(void *s1, void *s2, unsigned int n)
+memcpy	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	31;"	prototype	signature:(void *s1, void *s2, unsigned char n)
+memcpy	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	71;"	prototype	signature:(void *s1, void *s2, unsigned int n)
+memmove	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	32;"	prototype	signature:(void *s1, void *s2, unsigned char n)
+memmove	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	72;"	prototype	signature:(void *s1, void *s2, unsigned int n)
+memset	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	33;"	prototype	signature:(void *s, char c, unsigned char n)
+memset	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	73;"	prototype	signature:(void *s, char c, unsigned int n)
+numbitrec	isr.c	15;"	variable
+pb_trig	isr.c	10;"	variable
+port_gpio_init	hrdw_init.c	4;"	function	signature:(void)
+port_gpio_init	hrdw_init.h	3;"	prototype	signature:(void)
+pwm_init	hrdw_init.c	68;"	function	signature:(void)
+pwm_init	hrdw_init.h	8;"	prototype	signature:(void)
+reserv1	sci.h	20;"	member	struct:__anon1
+reserv2	sci.h	21;"	member	struct:__anon1
+reserv3	sci.h	22;"	member	struct:__anon1
+rim	hrdw_init.h	228;"	macro
+rtc_init	hrdw_init.c	38;"	function	signature:(void)
+rtc_init	hrdw_init.h	5;"	prototype	signature:(void)
+sci_init	hrdw_init.c	24;"	function	signature:(void)
+sci_init	hrdw_init.h	4;"	prototype	signature:(void)
+sci_tx	sci.c	10;"	function	signature:(unsigned char cr)
+sci_tx	sci.h	2;"	prototype	signature:(unsigned char cr)
+selectchtempigbt	adc.c	10;"	variable
+serialinterfacepc	sci.c	28;"	function	signature:(void)
+serialinterfacepc	sci.h	4;"	prototype	signature:(void)
+serout	sci.c	8;"	variable
+sim	hrdw_init.h	227;"	macro
+statusinductor	sci.h	17;"	member	struct:__anon1
+str	sci.h	29;"	member	union:__anon2
+strcat	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	16;"	prototype	signature:(char *s1, char *s2)
+strcat	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	56;"	prototype	signature:(char *s1, char *s2)
+strchr	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	17;"	prototype	signature:(char *s, char c)
+strchr	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	57;"	prototype	signature:(char *s, char c)
+strcmp	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	25;"	prototype	signature:(char *s1, char *s2)
+strcmp	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	65;"	prototype	signature:(char *s1, char *s2)
+strcpy	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	18;"	prototype	signature:(char *s1, char *s2)
+strcpy	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	58;"	prototype	signature:(char *s1, char *s2)
+strcspn	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	27;"	prototype	signature:(char *s1, char *s2)
+strcspn	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	67;"	prototype	signature:(char *s1, char *s2)
+strlen	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	28;"	prototype	signature:(char *s)
+strlen	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	68;"	prototype	signature:(char *s)
+strncat	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	19;"	prototype	signature:(char *s1, char *s2, unsigned char n)
+strncat	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	59;"	prototype	signature:(char *s1, char *s2, unsigned int n)
+strncmp	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	26;"	prototype	signature:(char *s1, char *s2, unsigned char n)
+strncmp	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	66;"	prototype	signature:(char *s1, char *s2, unsigned int n)
+strncpy	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	20;"	prototype	signature:(char *s1, char *s2, unsigned char n)
+strncpy	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	60;"	prototype	signature:(char *s1, char *s2, unsigned int n)
+strpbrk	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	21;"	prototype	signature:(char *s1, char *s2)
+strpbrk	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	61;"	prototype	signature:(char *s1, char *s2)
+strrchr	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	22;"	prototype	signature:(char *s, char c)
+strrchr	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	62;"	prototype	signature:(char *s, char c)
+strspn	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	29;"	prototype	signature:(char *s1, char *s2)
+strspn	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	69;"	prototype	signature:(char *s1, char *s2)
+strstr	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	23;"	prototype	signature:(char *s1, char *s2)
+strstr	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\string.h	63;"	prototype	signature:(char *s1, char *s2)
+temparrayrec	isr.c	13;"	variable
+temperature_igbt_1	sci.h	15;"	member	struct:__anon1
+temperature_igbt_2	sci.h	16;"	member	struct:__anon1
+temperature_inductor_1	sci.h	13;"	member	struct:__anon1
+temperature_inductor_2	sci.h	14;"	member	struct:__anon1
+time_12ms	isr.c	21;"	variable
+time_1536ms	isr.c	25;"	variable
+time_384ms	isr.c	24;"	variable
+time_48ms	isr.c	22;"	variable
+time_4ms	isr.c	20;"	variable
+time_96ms	isr.c	23;"	variable
+timereceive	isr.c	14;"	variable
+u_rectifler	sci.h	10;"	member	struct:__anon1
+x00	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	7;"	variable
+x01	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	8;"	variable
+x02	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	9;"	variable
+x03	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	10;"	variable
+x04	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	11;"	variable
+x05	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	12;"	variable
+x06	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	13;"	variable
+x07	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	14;"	variable
+x08	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	15;"	variable
+x09	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	16;"	variable
+x0a	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	17;"	variable
+x0b	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	18;"	variable
+x0c	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	19;"	variable
+x0d	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	20;"	variable
+x0e	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	21;"	variable
+x0f	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	22;"	variable
+x10	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	23;"	variable
+x11	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	24;"	variable
+x21	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	28;"	variable
+x22	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	29;"	variable
+x23	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	30;"	variable
+x24	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	34;"	variable
+x25	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	35;"	variable
+x26	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	36;"	variable
+x27	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	37;"	variable
+x28	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	38;"	variable
+x29	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	42;"	variable
+x2a	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	43;"	variable
+x2b	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	44;"	variable
+x2c	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	48;"	variable
+x2d	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	49;"	variable
+x31	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	53;"	variable
+x32	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	54;"	variable
+x33	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	55;"	variable
+x34	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	56;"	variable
+x34	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	57;"	variable
+x35	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	58;"	variable
+x36	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	59;"	variable
+x36	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	60;"	variable
+x37	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	61;"	variable
+x38	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	62;"	variable
+x38	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	63;"	variable
+x39	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	64;"	variable
+x3a	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	65;"	variable
+x3a	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	66;"	variable
+x3b	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	67;"	variable
+x3c	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	68;"	variable
+x3c	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	69;"	variable
+x3d	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	70;"	variable
+x3e	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	71;"	variable
+x3e	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	72;"	variable
+x3f	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	73;"	variable
+x41	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	77;"	variable
+x42	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	78;"	variable
+x43	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	79;"	variable
+x44	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	80;"	variable
+x44	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	81;"	variable
+x45	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	82;"	variable
+x46	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	83;"	variable
+x46	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	84;"	variable
+x47	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	85;"	variable
+x48	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	86;"	variable
+x48	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	87;"	variable
+x49	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	88;"	variable
+x4a	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	89;"	variable
+x4a	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	90;"	variable
+x4b	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	91;"	variable
+x4c	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	92;"	variable
+x4c	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	93;"	variable
+x4d	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	94;"	variable
+x4e	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	95;"	variable
+x4e	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	96;"	variable
+x4f	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	97;"	variable
+x50	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	101;"	variable
+x51	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	102;"	variable
+x52	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	103;"	variable
+x53	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	104;"	variable
+x54	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	105;"	variable
+x55	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	106;"	variable
+x57	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	107;"	variable
+x70	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	111;"	variable
+x71	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	112;"	variable
+x71	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	113;"	variable
+x72	..\..\..\..\..\..\program files\cosmic\eval_st7\hst7\io72324.h	114;"	variable
