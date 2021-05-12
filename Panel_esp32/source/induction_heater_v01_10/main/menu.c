@@ -381,7 +381,7 @@ void task_menu(void *arg)
                 {
 
                     memset(parg->row, 0, SIZESTRBUF);
-                    swprintf(parg->row, SIZESTRBUF, L"Кипяч.Вых.Мощ%% %05.01f ", pidparametr.pid_out);
+                    swprintf(parg->row, SIZESTRBUF, L"%S", messageprocess);
                     lcdprint(1, 0, parg->row, 20);
 
                     memset(parg->row, 0, SIZESTRBUF);

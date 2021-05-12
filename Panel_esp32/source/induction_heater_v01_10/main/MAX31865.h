@@ -31,13 +31,17 @@
 
 #define MAX31865_MIN_PT100 0x19b3 //-50C
 #define MAX31865_MAX_PT100 0x3e1d //250C
-#define STACK_SIZE_PT100_TASK 1000
+#define STACK_SIZE_PT100_TASK 10000
 
 #define IF_ERR_YES_RETURN_ERR \
     if (err != ESP_OK)        \
     {                         \
         return err;           \
     }
+    #define R_REF  400.0
+    #define A_PT100 0.00390830
+    #define B_PT100 0.0000000577500
+    #define RTD_ZERO_C 100.0
 //-----------------------------------------------------------------------------//
 esp_err_t max31865senddataspi(uint8_t addr, uint8_t *data, size_t size);
 esp_err_t max31865readdataspi(uint8_t addr, uint8_t *result, size_t size);
@@ -51,6 +55,7 @@ void task_getstatus_pt100();
 extern uint8_t statusmax31865;
 extern uint16_t rtd;
 extern float temperature;
+extern double rtd_average;
 
 //-----------------------------------------------------------------------------//
 #define AVERAGETEM 5

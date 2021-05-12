@@ -19,14 +19,16 @@
 #include "hw_init.h"
 #include "MAX31865.h"
 #include "dac_aud.h"
+#include "math.h"
 //-----------------------------------------------------------------------------//
 uint8_t statusmax31865 = 0;
 uint16_t rtd = 0;
+double rtd_temp = 0;
 uint8_t step_getstatus = 0;
 float temperature = 0.0;
-uint8_t trigerrone =0;
-float tempaverage = 0.0;
+uint8_t trigerrone = 0;
 uint8_t countaverage = 0;
+double rtd_average = 0;
 //-----------------------------------
 //------------------------------------------//
 esp_err_t max31865senddataspi(uint8_t addr, uint8_t *data, size_t size)
@@ -89,7 +91,7 @@ esp_err_t max31865resetfault()
 esp_err_t msx31865getstatus()
 {
     static uint8_t rtdBytes[2];
-    float tempf = 0.0;
+    double tempdouble = 0.0;
     uint8_t faultByte = 0;
     uint8_t confreg = (MAX31865_FAULT_DETECT_AUTOMAT | (1UL << MAX31865_CONFIG_MAINSFILTER_BIT));
     esp_err_t err = ESP_OK;
@@ -168,15 +170,19 @@ esp_err_t msx31865getstatus()
             rtd = rtdBytes[0] << CHAR_BIT;
             rtd |= rtdBytes[1];
             rtd >>= 1U;
-            tempf = rtd;           
-            if(countaverage<AVERAGETEM)
+
+            if (countaverage < AVERAGETEM)
             {
                 countaverage++;
-                tempaverage = tempaverage + (tempf / 32.0) - 256.0;
-            }else{
-                temperature = tempaverage/countaverage;
-                countaverage= 0;
-                tempaverage = 0.0;
+                rtd_temp = rtd_temp + rtd;
+            }
+            else
+            {
+                rtd_average = ((rtd_temp / countaverage) * R_REF) / pow(2.0,15);
+                tempdouble = (-A_PT100 + pow((pow(A_PT100, 2.0) - 4.0 * B_PT100 * (1.0 - (double)(rtd_average / RTD_ZERO_C))),0.5)) / (2.0 * B_PT100);
+                temperature =  round(tempdouble*10)/10;
+                countaverage = 0;
+                rtd_temp = 0;
             }
         }
         step_getstatus = 0;
@@ -219,9 +225,11 @@ void task_getstatus_pt100()
             {
                 trigerrone = 1;
                 temperature = 0;
-                 selectplayaudio(ALARMSENSOR_AUDIO); 
+                selectplayaudio(ALARMSENSOR_AUDIO);
             }
-        }else{
+        }
+        else
+        {
             trigerrone = 0;
         }
         vTaskDelay(100 / portTICK_PERIOD_MS);

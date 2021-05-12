@@ -38,7 +38,7 @@
 
 //-----------------------------------------------------------------------------//
 TprocData processworkdata;
-uint8_t onofowertempan1 = 0, onofowertempan2 = 0,  onofowertemmesh = 0, onofowertemhops = 0;
+uint8_t onofowertempan1 = 0, onofowertempan2 = 0, onofowertemmesh = 0, onofowertemhops = 0;
 TStructPid StructPid;
 
 //-----------------------------------------------------------------------------//
@@ -236,10 +236,11 @@ void proc_mesh_boil(void *arg)
                 {
                     pProcDat->actualstepproc_hops = 2;
                     pProcDat->playonetrig_hops = 0;
+                    pProcDat->shownumberstr = 0;
                 }
                 else
                 {
-                    pProcDat->actualstepproc_hops = 4;
+                    pProcDat->actualstepproc_hops = 5;
                     pProcDat->playonetrig_hops = 0;
                 }
 
@@ -254,10 +255,26 @@ void proc_mesh_boil(void *arg)
                 }
 
                 memset(messageprocess, 0, sizeof(messageprocess));
-                swprintf(messageprocess, sizeof(messageprocess), L"Кип.М1:%03i М2:%03i  %S ", DataFromIndHeater.structurdata.factpwm1, DataFromIndHeater.structurdata.factpwm2, &simv_blink[show_sim][0]);
-
+                if (pProcDat->shownumberstr == 0)
+                {
+                    swprintf(messageprocess, sizeof(messageprocess), L"Кип.М1:%03i М2:%03i  %S ", DataFromIndHeater.structurdata.factpwm1, DataFromIndHeater.structurdata.factpwm2, &simv_blink[show_sim][0]);
+                }
+                else if (pProcDat->shownumberstr == 1)
+                {
+                    swprintf(messageprocess, sizeof(messageprocess), L"Кип.Ожидание закип.%S ", &simv_blink[show_sim][0]);
+                }
+                else if (pProcDat->shownumberstr == 2)
+                {
+                    swprintf(messageprocess, sizeof(messageprocess), L"Кип.Посл.закипания.%S ", &simv_blink[show_sim][0]);
+                }
+                else if (pProcDat->shownumberstr == 3)
+                {
+                    swprintf(messageprocess, sizeof(messageprocess), L"Кип.Нажмите ввод.. %S ", &simv_blink[show_sim][0]);
+                }
                 heater_process_hops(&DataToInd.structurdata, &dataprocess.dataproc.hops[pProcDat->actualpause_hops], &pidparametr, temperature, pProcDat->actualpause_hops);
-                if (temperature >= dataprocess.dataproc.hops[pProcDat->actualpause_hops].temperature_hops)
+
+                // if (temperature >= dataprocess.dataproc.hops[pProcDat->actualpause_hops].temperature_hops)
+                if ((getkeyenter() == 1) && (parametrmenu.submenuhops0 == 0) && (parametrmenu.menunumber == 0))
                 {
                     pProcDat->playonetrig_hops = 0;
                     pProcDat->actualstepproc_hops = 3;
@@ -271,7 +288,7 @@ void proc_mesh_boil(void *arg)
 
                 if (pProcDat->playonetrig_hops == 0)
                 {
-                    selectplayaudio(HOPSADD_AUDIO); //start pause1
+                    selectplayaudio(TERMPPAUSENRUN_AUDIO); //start pause1
                     pProcDat->playonetrig_hops = 1;
                 }
 
@@ -288,17 +305,53 @@ void proc_mesh_boil(void *arg)
                     pProcDat->playonetrig_hops = 0;
                     if (dataprocess.dataproc.hops[pProcDat->actualpause_hops].numberhops > pProcDat->actualpause_hops)
                     {
-                        pProcDat->actualstepproc_hops = 2;
-                        pProcDat->actualpause_hops++;
+                        pProcDat->actualstepproc_hops = 4;
+                        pProcDat->shownumberstr = 0;
                     }
                     else
                     {
-                        pProcDat->actualstepproc_hops = 4;
+                        pProcDat->actualstepproc_hops = 5;
                     }
                 }
                 break;
             }
             case 4:
+            {
+
+                if (pProcDat->playonetrig_hops == 0)
+                {
+                    selectplayaudio(HOPSADD_AUDIO); //add hops
+                    pProcDat->playonetrig_hops = 1;
+                }
+
+                memset(messageprocess, 0, sizeof(messageprocess));
+                if (pProcDat->shownumberstr == 0)
+                {
+                    swprintf(messageprocess, sizeof(messageprocess), L"Кип.М1:%03i М2:%03i  %S ", DataFromIndHeater.structurdata.factpwm1, DataFromIndHeater.structurdata.factpwm2, &simv_blink[show_sim][0]);
+                }
+                else if (pProcDat->shownumberstr == 1)
+                {
+                    swprintf(messageprocess, sizeof(messageprocess), L"Кип.Ожидание хмеля.%S ", &simv_blink[show_sim][0]);
+                }
+                else if (pProcDat->shownumberstr == 2)
+                {
+                    swprintf(messageprocess, sizeof(messageprocess), L"Кип.Посл.внесения. %S ", &simv_blink[show_sim][0]);
+                }
+                else if (pProcDat->shownumberstr == 3)
+                {
+                    swprintf(messageprocess, sizeof(messageprocess), L"Кип.Нажмите ввод.. %S ", &simv_blink[show_sim][0]);
+                }
+                heater_process_hops(&DataToInd.structurdata, &dataprocess.dataproc.hops[pProcDat->actualpause_hops], &pidparametr, temperature, pProcDat->actualpause_hops);
+
+                if ((getkeyenter() == 1) && (parametrmenu.submenuhops0 == 0) && (parametrmenu.menunumber == 0))
+                {
+                    pProcDat->actualstepproc_hops = 2;
+                    pProcDat->playonetrig_hops = 0;
+                }
+
+                break;
+            }
+            case 5:
             {
 
                 if (pProcDat->playonetrig_hops == 0)
@@ -322,6 +375,24 @@ void proc_mesh_boil(void *arg)
                 pProcDat->actualstepproc_hops = 0;
                 break;
             }
+            }
+        }
+
+        if (pProcDat->counttimesowstr < 15)
+        {
+            pProcDat->counttimesowstr++;
+        }
+        else
+        {
+            pProcDat->counttimesowstr = 0;
+
+            if (pProcDat->shownumberstr < 3)
+            {
+                pProcDat->shownumberstr++;
+            }
+            else
+            {
+                pProcDat->shownumberstr = 0;
             }
         }
 
@@ -401,13 +472,11 @@ void heater_process_mesh(DataToIndHeater *induc_board, Tdatapause_mashing *meshd
     }
     else
     {
-        if (temper <= meshdata->temperature_mesh )
+        if (temper <= meshdata->temperature_mesh)
         {
             onofowertemmesh = 0;
         }
     }
-
- 
 
     if ((meshdata->induct1_use == 1) && (onofowertempan1 == 0) && (onofowertemmesh == 0) && (statusmax31865 == 0))
     {
@@ -499,7 +568,7 @@ void heater_process_hops(DataToIndHeater *induc_board, Tdatahops *hops, Tpidstr 
     }
     else
     {
-        if (temper <= hops->temperature_hops )
+        if (temper <= hops->temperature_hops)
         {
             onofowertemhops = 0;
         }
