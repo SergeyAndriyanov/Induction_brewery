@@ -9,7 +9,7 @@
 //-----------------------------------------------------------------------------//
 #define MAXPAUSMASHING 6
 #define MAXXOPS 6
-#define STARTBOILINGTEMP 99
+//#define STARTBOILINGTEMP 99
 #define MODE_OFF  0
 #define MODE_MESH 1
 #define MODE_HOPS 2
@@ -29,20 +29,20 @@
 #define MESHTEMPPAN1 180
 #define MESHTEMPPAN2 180
 #define TEMPMESHDELTA 2
-#define TEMPPANMESHDELTA 20
+#define TEMPPANMESHDELTA 30
 #define MESHINDUCTOR1_USE 1
 #define MESHINDUCTOR2_USE 1
-#define MESHMAXPWM 50
+#define MESHMAXPWM 60
 #define TIME_MASH 1800000
 //-----------------------------------------------------------------------------//
-#define TEMPHOPSDEF 99
-#define HOPSTEMPPAN1 220
-#define HOPSTEMPPAN2 220
+#define TEMPHOPSDEF 101
+#define HOPSTEMPPAN1 190
+#define HOPSTEMPPAN2 190
 #define TEMPHOPSDELTA 2
-#define TEMPPANHOPSDELTA 20
+#define TEMPPANHOPSDELTA 30
 #define HOPSINDUCTOR1_USE 1
 #define HOPSINDUCTOR2_USE 1
-#define HOPSMAXPWM 50
+#define HOPSMAXPWM 65
 #define TIME_HOPS 1800000
 
 #define MAXPID_P 100
@@ -83,8 +83,8 @@ typedef struct
 } Tdatahops;
 typedef struct
 {
-    Tdatapause_mashing mash[MAXPAUSMASHING+1];
-    Tdatahops hops[MAXXOPS+1];
+    Tdatapause_mashing mash[(MAXPAUSMASHING+3)];
+    Tdatahops hops[(MAXXOPS+3)];
     uint8_t mode_work;
     uint16_t crc;
 } TdataProcess;

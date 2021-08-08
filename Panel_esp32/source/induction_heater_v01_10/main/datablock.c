@@ -59,7 +59,8 @@ void load_dataproc()
 //-----------------------------------------------------------------------------//
 void loaddefault()
 {
-    for (int i = 0; i < MAXPAUSMASHING; i++)
+
+    for (int i = 0; i <= MAXPAUSMASHING; i++)
     {
         dataprocess.dataproc.mash[i].temperature_mesh = TEMPMESHDEF;
         dataprocess.dataproc.mash[i].temperature_pan1 = MESHTEMPPAN1;
@@ -73,7 +74,7 @@ void loaddefault()
         dataprocess.dataproc.mash[i].numbermesh = MAXPAUSMASHING;
     }
 
-    for (int i = 0; i < MAXXOPS; i++)
+    for (int i = 0; i <= MAXXOPS; i++)
     {
         dataprocess.dataproc.hops[i].temperature_hops = TEMPHOPSDEF;
         dataprocess.dataproc.hops[i].temperature_pan1 = HOPSTEMPPAN1;
@@ -121,6 +122,10 @@ uint8_t read_data_process()
     uint8_t ret = 0;
     nvs_handle_t dataproc_handle;
     nvs_open(STORAGE_NAMESPACE_P, NVS_READWRITE, &dataproc_handle);
+    // nvs_erase_all(dataproc_handle);
+    // nvs_commit(dataproc_handle);
+    // nvs_close(dataproc_handle);
+
     size_t required_size = sizeof(TUDataProc);
     nvs_get_blob(dataproc_handle, KEY_DATAPROCESS, dataprocess.buf, &required_size);
     uint16_t crc = DataCrc(dataprocess.buf, (sizeof(TUDataProc) - 2));

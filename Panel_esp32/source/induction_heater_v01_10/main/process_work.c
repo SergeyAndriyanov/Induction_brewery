@@ -274,11 +274,14 @@ void proc_mesh_boil(void *arg)
                 heater_process_hops(&DataToInd.structurdata, &dataprocess.dataproc.hops[pProcDat->actualpause_hops], &pidparametr, temperature, pProcDat->actualpause_hops);
 
                 // if (temperature >= dataprocess.dataproc.hops[pProcDat->actualpause_hops].temperature_hops)
-                if ((getkeyenter() == 1) && (parametrmenu.submenuhops0 == 0) && (parametrmenu.menunumber == 0))
+                if ((parametrmenu.submenuhops0 == 0) && (parametrmenu.menunumber == 0))
                 {
-                    pProcDat->playonetrig_hops = 0;
-                    pProcDat->actualstepproc_hops = 3;
-                    hops_act_time = 0;
+                    if (getkeyenter() == 1)
+                    {
+                        pProcDat->playonetrig_hops = 0;
+                        pProcDat->actualstepproc_hops = 3;
+                        hops_act_time = 0;
+                    }
                 }
                 break;
             }
@@ -343,10 +346,14 @@ void proc_mesh_boil(void *arg)
                 }
                 heater_process_hops(&DataToInd.structurdata, &dataprocess.dataproc.hops[pProcDat->actualpause_hops], &pidparametr, temperature, pProcDat->actualpause_hops);
 
-                if ((getkeyenter() == 1) && (parametrmenu.submenuhops0 == 0) && (parametrmenu.menunumber == 0))
+                if ((parametrmenu.submenuhops0 == 0) && (parametrmenu.menunumber == 0))
                 {
-                    pProcDat->actualstepproc_hops = 2;
-                    pProcDat->playonetrig_hops = 0;
+                    if (getkeyenter() == 1)
+                    {
+                        pProcDat->actualstepproc_hops = 2;
+                        pProcDat->actualpause_hops = +1;
+                        pProcDat->playonetrig_hops = 0;
+                    }
                 }
 
                 break;
