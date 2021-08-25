@@ -1,0 +1,609 @@
+<TCP_UNIT STATUSANDCOLUMN S1>
+ No Connect
+ Try Connect
+ Work
+ Work,net err
+ Connected,test
+ Disconnect,error
+ Error in connect
+ Disable
+ Trace,ok
+ Trace,error
+ Trace
+ ;11
+ ;12
+ ,no reserv
+ +
+ ?
+ No Connect,net err
+ Try Connect,net err
+ Work,unit err
+ 19
+ IP-Addr
+ Unit-Addr
+ Status
+ T_Connect
+ WSA Conn err
+ T_Exchange
+ WSA Exchange err
+ Unit err
+ Err Count
+ Speed
+ 30
+ Net Unit
+<END>
+<NODE STATUSANDCOLUMN S2>
+ NODE STATUS
+ STS
+ I
+ P
+ IP/TCP
+ COM/Phone
+ T_Exchange
+ Speed
+ UnSync
+ WSA IP-err
+ WSA TCP-err
+ ;11
+ ;12
+ ;13
+ ;14
+ ;15
+ net
+ +net
+ ;18
+ ;19
+ ;20
+ ;21
+ ;22
+ ;23
+ ;24
+ ;25
+ sms
+ modem
+ rs
+ ;29
+ ;30
+ gprs
+<END>
+<UNIT STATUS NAME S3>
+ unknown
+ opening
+ closing
+ e:two end
+ Open
+ e:no open
+ e:no close
+ alr closing(by cmd)
+ Close
+ e:-open
+ e:-close
+ e:+open
+ e:+close
+ e:ext open
+ e:ext close
+ alr closing(no open)
+ alr closing(ne otlip)
+ alr closing(two end)
+ alr closing(by value)
+ Open:wait value s1
+ Open:wait value s2
+ auto closing
+ ;22
+ ;23
+ unknown
+ to ON
+ to OFF
+ @e:two end
+ ON
+ e:not ON
+ e:not OFF
+ alr closing(by cmd)
+ OFF
+ @e:-open
+ @e:-close
+ e:m not change
+ e:m timeout
+ e:ext on
+ e:ext off
+ alr off(not on)
+ alr off(2?)
+ alr off(3?)
+ alr off(by value)
+ ON:wait value s1
+ ON:wait value s2
+ to auto OFF
+ ;46
+ bad condition
+ ;48
+ ;49
+ ;50
+ ;51
+ ;52
+ ;53
+ ;54
+ ;55
+ ;56
+ ;57
+ ;58
+ ;59
+ ;60
+ ;61
+ ;62
+ ;63
+<END>
+<OPC STATUSANDCOLUMN S4>
+ Server
+ STS
+ T_Connect
+ T_Exchange
+ Total err
+ ;5
+ ;6
+ ;7
+ No Connect
+ Connecting...
+ Connected
+ ;11
+ ;12
+ ;13
+ Wrong Connect
+ Connected,unit error
+<END>
+<RSCOM STATUSANDCOLUMN S5>
+ N
+ number
+ sts
+ err
+ time err
+ modem err
+ time err
+ all error
+ zero read
+ speed
+ one speed
+ ;11
+ ;12
+ ;13
+ ;14
+ ;15
+<END>
+<VECTOR COLUMN NAME  S6>
+ V_Name
+ code
+ comment
+ DT
+ ;4
+ ;5
+ ;6
+ ;7
+<END>
+<ROOT COLUMN NAME  S7>
+ DATE
+ TIME
+ TOTAL
+ AVERAGE
+ SUM_TOTAL
+ ;5
+ ;6
+ ;7
+ ;8
+ ;9
+ ;10
+ ;11
+ ;12
+ ;13
+ ;14
+ ;15
+ ;16
+ ;17
+ ;18
+ ;19
+ U-I
+ P-Q
+ ;22
+ ;23
+ ;24
+ avr
+ drop total
+ drop month
+ ;28
+ drop day
+ ;30
+ ;31
+<END>
+<ROOT HTML_XML STYLE S8>
+<html cnv>
+ class="tm6_c_t0"
+ .tm6_c_t0 {font-weight: normal;font-size: 100%;text-align: center;vertical-align: middle;text-decoration: none;border-width: thin;border-style:solid;width:100%;height:auto;}
+ frame=border rules=all  width=100%
+ class="tm6_c_t1"
+ .tm6_c_t1 {font-weight: bold;font-size: 150%;text-align: center;vertical-align: middle;text-decoration: none;border-collapse:collapse;border-width: thin;border-style:solid;width:100%;height:auto;}
+ frame=border rules=all  width=100%
+ class="tm6_c_t2"
+ .tm6_c_t2 {font-weight: normal;font-size: 100%;text-align: center;vertical-align: middle;text-decoration: none;border-collapse:collapse;border-width: thin;border-style:solid;width:100%;height:auto;}
+ frame=border rules=all  width=100%
+ class="tm6_small"
+ .tm6_small {font-size:smaller;font-weight:lighter;}
+ class="tm6_big"
+ .tm6_big {font-size:larger;font-weight:bolder;}
+ class="tm6_extinfo"
+ .tm6_extinfo {font-size:smaller;font-weight:lighter;}
+ class="tm6_vnumerator"
+ .tm6_vnumerator {font-size:smaller;font-weight:lighter;color:grey;}
+ class="tm6_numerator"
+ .tm6_numerator {font-size:smaller;font-weight:lighter;color:green;}
+ class="tm6_autodate"
+ .tm6_autodate {color:blue;}
+ class="tm6_intdate"
+ .tm6_intdate {font-style:italic;}
+ class="tm6_fulldate"
+ .tm6_fulldate {font-style:italic;}
+ class="tm6_sig"
+ .tm6_sig {font-weight:normal;color:black;}
+ class="tm6_itogo_hdr"
+ .tm6_itogo_hdr {font-style:italic;text-decoration: underline;}
+ class="tm6_itogo_hdr"
+ .tm6_itogo_val {font-style:italic;color:green;}
+ class="tm6_faval"
+ .tm6_faval {color:red;}
+ =?
+<xml cnf index=0>
+=DOCUMENT_1
+=area
+=group
+= name="%s" code="%s" comment="%s" 
+=sub_group
+= name="%s" code="%s" comment="%s" 
+=unit
+= name="%s" code="%s" comment="%s" 
+=measuringpoint
+= name="%s" code="%s" comment="%s" 
+=measuring
+= name="%s" code="%s" comment="%s" 
+=sig
+=tvc_curve
+=curve
+=-
+=<dt>%s</dt><value>%s</value>
+<xml cnf index=1>
+=DOCUMENT_2
+=area
+=group
+= name="%s" code="%s" comment="%s" 
+=sub_group
+= name="%s" code="%s" comment="%s" 
+=unit
+= name="%s" code="%s" comment="%s" 
+=measuringpoint
+= name="%s" code="%s" comment="%s" 
+=measuring
+= name="%s" code="%s" comment="%s" 
+=sig
+=tvc_curve
+=curve
+=point
+= start="%s"><value>%s</value>
+<xml cnf index=2>
+=DOCUMENT_3
+=area
+=group
+= name="%s" code="%s" comment="%s" 
+=sub_group
+= name="%s" code="%s" comment="%s" 
+=unit
+= name="%s" code="%s" comment="%s" 
+=channel
+= name="%s" code="%s" comment="%s" 
+=channel
+= name="%s" code="%s" comment="%s" 
+=sig
+=tvc_curve
+=curve
+=period
+= start="%s"><value>%s</value>
+<xml cnf index=3>
+=DOCUMENT_4
+=area
+=group
+= name="%s" code="%s" comment="%s" 
+=sub_group
+= name="%s" code="%s" comment="%s" 
+=unit
+= name="%s" code="%s" comment="%s" 
+=channel
+= name="%s" code="%s" comment="%s" 
+=channel
+= name="%s" code="%s" comment="%s" 
+=sig
+=tvc_curve
+=curve
+=point
+= start="%s" end="%s">%s
+<doc class cnf index=4>
+=0
+=%d%m%y_%H%M%S
+=%d.%m.%y
+=%d.%m.%y
+=0,ffffffff,ffffffff,ffffffff
+=0
+=%d%m%y
+=%d.%m.%y
+=%d.%m.%y
+=0,ffffffff,ffffffff,ffffffff
+=80020
+=%Y%m
+=%d.%m.%y
+=%d.%m.%y
+=0,ffffffff,ffffffff,ffffffff
+=80030
+=%Y%m
+=%d.%m.%y
+=%d.%m.%y
+=0,ffffffff,ffffffff,ffffffff
+=80040
+=%Y%m
+=%d.%m.%y
+=%d.%m.%y
+=0,ffffffff,ffffffff,ffffffff
+=80050
+=%Y%m
+=%d.%m.%y
+=%d.%m.%y
+=0,ffffffff,ffffffff,ffffffff
+=0
+=Z
+=%d.%m.%y
+=%d.%m.%y
+=0,ffffffff,ffffffff,ffffffff
+=0
+=Z
+=%d.%m.%y
+=%d.%m.%y
+=0,ffffffff,ffffffff,ffffffff
+<END>
+<HTML536_543 COLUMN NAME  S9>
+ TOTAL
+ TIME
+ TOTAL
+ AVERAGE
+ SUM_TOTAL
+ ;5
+ ;6
+ ;7
+<END>
+<HTTP COLUMN NAME  S10>
+ TM6
+ System
+ All Channels
+ tm6_log
+ ;4
+ Process
+ ;6
+ ;7
+ COM port
+ TCP Unit
+ ES Meter
+ ;11
+ ;12
+ ;13
+ ;14
+ ;15
+ ;16
+ ;17
+ ;18
+ ;19
+ ;20
+ ;21
+ ;22
+ ;23
+ ;24
+ ;25
+ ;26
+ ;27
+ ;28
+ ;29
+ ;30
+ ;31
+ ;32
+ ;33
+ ;34
+ ;35
+ ;36
+ ;37
+ ;38
+ ;39
+ ;40
+ ;41
+ ;42
+ ;43
+ ;44
+ ;45
+ ;46
+ ;47
+ ;48
+ ;49
+ Status
+ Energy Few
+ I and U
+ Power
+ Average Power
+ Archieve Energy
+ ;56
+ ;57
+ ;58
+ ;59
+ ;60
+ ;61
+ ;62
+ ;63
+<END>
+<GRAPH COLUMN NAME  S11>
+ id
+ name
+ flags
+ paint
+ create&paint
+ destroy
+ queu speed
+ ;7
+ ;8
+ ;9
+ ;10
+ ;11
+ (trend)
+ (dump)
+ (popup)
+ (scr ref)
+<END>
+<CHANNEL  VALUE FORMAT  S12>
+ %g
+ %.1f
+ %.2f
+ %.3f
+ %.4f
+ %8.3f
+ %8.2f
+ %.3e
+ %.18e
+ %18.1f
+ %18.2f
+ %18.3f
+ %.12e
+ %.10g
+ %.12g
+ %.18g
+ %g
+ %.1f
+ %.2f
+ %.3f
+ %.4f
+ %8.3f
+ %8.2f
+ %.3e
+ %g
+ %.1f
+ %.2f
+ %.3f
+ %.4f
+ %8.3f
+ %8.2f
+ %.3e
+ %X
+ %d
+ %u
+ %d
+ %d
+ %d
+ %d
+ %d
+ %lX
+ %ld
+ %lu
+ %ld
+ %ld
+ %ld
+ %ld
+ %ld
+ %lu
+ %ld
+ %ld
+ %ld
+ %ld
+ %ld
+ %ld
+ %ld
+ %lu
+ %ld
+ %ld
+ %ld
+ %ld
+ %ld
+ %ld
+ %ld
+<END>
+<ECOUNTER VALUE FORMAT  S13>
+ %.2f
+ %.3f
+ %.2f
+ %.2f
+ %.2f
+ %.2f
+ %g
+ %g
+ %g
+ %g
+ %g
+ =-
+ %d.%m.%y
+ %d.%m.%y
+ %H:%M
+ %H:%M:%S
+<END>
+<ECOUNTER STATUSANDCOLUMN  S14>
+ Name
+ =<BR>I
+ =<BR>II
+ =<BR>III
+ ES Time
+ ES Number
+ PC - ES
+ Reading Time
+ Err open
+ Err read
+ angleU
+ dU
+ kP
+ I
+ U
+ frq
+ Pe
+ Pi
+ Qe
+ Qi
+ dt
+ Phase sts
+ enable
+  P 
+  Q 
+  S 
+  L 
+ I^U
+ =
+ ( + )
+ dt read
+ few sts
+ Link ev
+ f-kp ev
+ power ev
+ amper ev
+ volts ev
+ unit sts ev
+ delta abs
+ delta rel
+ EA+
+ EA-
+ EQ+
+ EQ-
+ tarif
+ total
+ month
+ day
+ ;48
+ ;49
+ =1
+ =2
+ =3
+ ALL
+ I
+ II
+ III
+ =T1
+ =T2
+ =T3
+ =T4
+ =T5
+ =T6
+ =T7
+<END>
+<ENDFILE>

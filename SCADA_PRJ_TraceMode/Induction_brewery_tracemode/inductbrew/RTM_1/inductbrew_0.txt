@@ -1,0 +1,31 @@
+(18:36:18) ERR_RTM:hasp driver login = 7
+(18:36:18) INF_LOAD:Starting... inductbrew_0
+(18:36:18) INF_RTM:Detected RTM NT(6.1)
+(18:36:18) INF_RTM:Base TRACE MODE 6 Profiler T-Factory + ver. 6.10.2 ver. 6.10.1 
+(18:36:18) INF_LOAD:max channel = 65535
+(18:36:18) INF_LOAD:Load Channels 307(1 - 353) 
+(18:36:18) INF_LOAD:Templates=1 (math=0 sql=0 scr=1 doc=0 pnl=0) 
+(18:36:18) INF_LOAD:Objects = 0
+(18:36:18) INF_RTM:Timer=0.055s CalcLoop=550ms 
+(18:36:18) INF_LOAD:LoadTime=0.047s CalcPeriod=550ms 
+(18:36:18) INF_RTM:available(MB): pm=3324 vm=2047; free(MB): pm=1276 vm=1917 em=0 after load
+(18:36:18) INF_RTM:total use(MB): pm=2048 vm=130 after load
+(18:36:18) INF_RTM:use(MB): pm=23(23) vm=47(47) pf=2 after load
+(18:36:18) INF_RTM:gh:131 uh:14 hh:146 after load
+(18:36:22) INF_IP:hostname is cncpc 
+(18:36:22) INF_IP:card0 addr=0.0.0.0 
+(18:36:22) INF_IP:card1 addr=192.168.1.2 
+(18:36:22) INF_IP:card2 addr=169.254.93.160 
+(18:36:22) INF_RTM:start time is 0 s 
+(18:36:22) INF_RTM:total use(MB): pm=2126 vm=229 after start
+(18:36:22) INF_RTM:use(MB): pm=89(89) vm=91(91) pf=35373 after start
+(18:36:22) INF_RTM:gh:615 uh:273 hh:284 after start
+(18:36:22) INF_FLT:ModeSwitch at start e15=0000 e18=0000 e20=0000 
+(18:36:22) INF_RTM:mode=2(Work) e15=00 e18=00 e20=00 [src4] 
+(18:36:22) INF_GRAPH:scr:1:popup=0 scrref=0 trend=1,0 update=1 
+(18:40:1) INF_RTM:stoping... = 30
+(18:40:2) INF_RTM:main clc stop 
+(18:40:2) INF_RTM:mode=5(Stop) e15=00 e18=00 e20=00 [src0] 
+(18:40:3) INF_RTM:stop time is 1.107 s 
+(18:40:3) INF_RTM:number of calculation = 389
+(18:40:3) INF_RTM:END OF WORK 
