@@ -40,7 +40,7 @@
 TprocData processworkdata;
 uint8_t onofowertempan1 = 0, onofowertempan2 = 0, onofowertemmesh = 0, onofowertemhops = 0;
 TStructPid StructPid;
-
+float tempreqmesh_hops = 0;
 //-----------------------------------------------------------------------------//
 void run_task_process_work()
 {
@@ -65,6 +65,7 @@ void proc_mesh_boil(void *arg)
             pProcDat->oneevent_mesh = 0;
             pProcDat->waitprep_mesh = 0;
             pProcDat->actualpause_mesh = 0;
+            tempreqmesh_hops=0;
 
             pProcDat->actualstepproc_hops = 0;
             pProcDat->playonetrig_hops = 0;
@@ -78,6 +79,7 @@ void proc_mesh_boil(void *arg)
         {
             pumponoff(&pumponof);
             parametrfasnrtl.stat = INDUC_ON;
+            tempreqmesh_hops = dataprocess.dataproc.mash[pProcDat->actualpause_mesh].temperature_mesh;
             switch (pProcDat->actualstepproc_mesh)
             {
             case 0:
@@ -203,6 +205,7 @@ void proc_mesh_boil(void *arg)
         {
             pumponoff(&pumponof);
             parametrfasnrtl.stat = INDUC_ON;
+            tempreqmesh_hops=dataprocess.dataproc.hops[pProcDat->actualpause_hops].temperature_hops;
             switch (pProcDat->actualstepproc_hops)
             {
             case 0:

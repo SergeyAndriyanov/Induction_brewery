@@ -49,6 +49,7 @@ typedef struct
 
 extern TprocData processworkdata;
 extern TStructPid StructPid;
+extern float tempreqmesh_hops;
 
 //-----------------------------------------------------------------------------//
 void run_task_process_work();

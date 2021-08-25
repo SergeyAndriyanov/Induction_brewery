@@ -3,7 +3,8 @@ src/packet.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_gdbstub/private_include/esp_gdbstub_common.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_gdbstub/include/esp_gdbstub.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_gdbstub/xtensa/esp_gdbstub_arch.h \
- C:/msys32/home/sergey/esp/esp-idf/components/freertos/xtensa/include/freertos/xtensa_context.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/freertos/port/xtensa/include/freertos/xtensa_context.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/xtensa/include/xtensa/xtensa_context.h \
  C:/msys32/home/sergey/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
  C:/msys32/home/sergey/esp/esp-idf/components/xtensa/include/xtensa/corebits.h \
  C:/msys32/home/sergey/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
@@ -22,7 +23,9 @@ C:/msys32/home/sergey/esp/esp-idf/components/esp_gdbstub/include/esp_gdbstub.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/esp_gdbstub/xtensa/esp_gdbstub_arch.h:
 
-C:/msys32/home/sergey/esp/esp-idf/components/freertos/xtensa/include/freertos/xtensa_context.h:
+C:/msys32/home/sergey/esp/esp-idf/components/freertos/port/xtensa/include/freertos/xtensa_context.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/xtensa/include/xtensa/xtensa_context.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h:
 

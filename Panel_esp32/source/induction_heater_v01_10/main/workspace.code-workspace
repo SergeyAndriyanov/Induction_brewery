@@ -13,7 +13,18 @@
 			"task.h": "c",
 			"math.h": "c",
 			"cmath": "c",
-			"complex": "c"
+			"complex": "c",
+			"event_groups.h": "c",
+			"sdkconfig.h": "c",
+			"modbus.h": "c",
+			"esp_log.h": "c",
+			"*.ipp": "c",
+			"esp_modbus_common.h": "c",
+			"xmemory": "c"
+		},
+		"actionButtons": {
+			
+		
 		}
 	}
 }

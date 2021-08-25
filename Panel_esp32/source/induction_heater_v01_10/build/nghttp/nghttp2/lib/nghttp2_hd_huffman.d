@@ -11,7 +11,8 @@ nghttp2/lib/nghttp2_hd_huffman.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_buf.h \
  C:/msys32/home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_int.h \
  C:/msys32/home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.h \
- C:/msys32/home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_rcbuf.h
+ C:/msys32/home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_rcbuf.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_net.h
 
 C:/msys32/home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_hd_huffman.h:
 
@@ -36,4 +37,6 @@ C:/msys32/home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_int.h:
 C:/msys32/home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_rcbuf.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_net.h:
 /home/sergey/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_hd_huffman.c:

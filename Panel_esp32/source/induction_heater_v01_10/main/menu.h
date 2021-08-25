@@ -35,7 +35,10 @@ uint8_t submenupid;
 uint8_t maxpwmreqp1;
 uint8_t maxpwmreqp2;
 
+
+uint8_t temp_enterwifi;
 }Tparametrmenu;
+
 
 
 //-----------------------------------------------------------------------------//
@@ -44,6 +47,11 @@ extern wchar_t messageprocess[21];
 extern uint8_t counterblinr;
 extern uint8_t show_sim;
 extern const wchar_t simv_blink[2][2];
+
+extern uint32_t donetimemash;
+extern uint32_t donetimehops;
+extern uint32_t actualmashpause;
+extern uint32_t actualhopspause;
 
 //-----------------------------------------------------------------------------//
 void runtaskmenu();

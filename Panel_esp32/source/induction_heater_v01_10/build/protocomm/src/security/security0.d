@@ -5,6 +5,7 @@ src/security/security0.o: \
  C:/msys32/home/sergey/esp/induction_heater_v01/build/include/sdkconfig.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log_internal.h \
  C:/msys32/home/sergey/esp/esp-idf/components/protocomm/include/security/protocomm_security.h \
@@ -26,6 +27,8 @@ C:/msys32/home/sergey/esp/induction_heater_v01/build/include/sdkconfig.h:
 C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

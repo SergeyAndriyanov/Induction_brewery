@@ -28,9 +28,15 @@
 #include "nvs_flash.h"
 #include "nvs.h"
 #include "process_work.h"
+#include "wifi.h"
+#include "modbus.h"
+#include "mdns.h"
+
 
 void app_main(void)
-{    
+{
+    static void *mbc_slave_handler = NULL;
+    uint8_t oneinitmodbus = 0;
     esp_err_t err = nvs_flash_init();
     if (err == ESP_ERR_NVS_NO_FREE_PAGES || err == ESP_ERR_NVS_NEW_VERSION_FOUND)
     {
@@ -43,10 +49,11 @@ void app_main(void)
         esp_restart();
     }
     load_dataproc();
+    initparamwifi();
     gpio_conf();
 
     dac_init_aud();
-    runtaskaudio();    
+    runtaskaudio();
     selectplayaudio(LOAD_AUDIO);
 
     lcdinit4bit();
@@ -75,12 +82,34 @@ void app_main(void)
     runtaskkey();
 
     // init
-
+    runtaskwifi();
     vTaskDelay(3000 / portTICK_PERIOD_MS);
     runtaskmenu();
     run_task_process_work();
+
     for (;;)
     {
+        if (wifioneinit == 1)
+        {
+            if (oneinitmodbus == 0)
+            {
+                start_mdns_service();
+                modbus_init_sl(mbc_slave_handler);
+                runtaskmodbus();
+                oneinitmodbus = 1;
+            }
+        }
+        else
+        {
+            if (oneinitmodbus != 0)
+            {
+                //mdns_free();
+                // modbus_deinit_mb();
+                // mbc_slave_handler=NULL;
+                //oneinitmodbus = 0;
+                /* If you enable this code, reinitialization of modbus_init_sl does not work, the program crashes into a guru ... error.*/
+            }
+        }
 
         vTaskDelay(1000 / portTICK_PERIOD_MS);
     }

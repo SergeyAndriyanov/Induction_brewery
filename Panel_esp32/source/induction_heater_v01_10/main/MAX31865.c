@@ -29,6 +29,7 @@ float temperature = 0.0;
 uint8_t trigerrone = 0;
 uint8_t countaverage = 0;
 double rtd_average = 0;
+uint32_t errormesage = 0;
 //-----------------------------------
 //------------------------------------------//
 esp_err_t max31865senddataspi(uint8_t addr, uint8_t *data, size_t size)
@@ -224,12 +225,14 @@ void task_getstatus_pt100()
             if (trigerrone == 0)
             {
                 trigerrone = 1;
-                temperature = 0;
+                temperature = 0;                
                 selectplayaudio(ALARMSENSOR_AUDIO);
             }
+            errormesage = statusmax31865;
         }
         else
         {
+            errormesage = 0;
             trigerrone = 0;
         }
         vTaskDelay(100 / portTICK_PERIOD_MS);

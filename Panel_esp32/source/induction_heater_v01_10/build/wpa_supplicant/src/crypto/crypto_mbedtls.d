@@ -14,12 +14,12 @@ src/crypto/crypto_mbedtls.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/common.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/os.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_types.h \
- C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/endian.h \
- C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h \
- C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/list.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpa_debug.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpabuf.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log_internal.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/crypto.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/random.h \
@@ -28,18 +28,40 @@ src/crypto/crypto_mbedtls.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/entropy.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/sha512_alt.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/hal/include/hal/sha_types.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/aes_alt.h \
- C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp32/aes.h \
- C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/aes.h \
- C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/aes/esp_aes.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/hal/include/hal/aes_types.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/mbedtls/bignum.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pkcs5.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cmac.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/nist_kw.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/des.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ccm.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/arc4.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/common.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpabuf.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/dh_group5.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/md5.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/aes_wrap.h
 
 C:/msys32/home/sergey/esp/esp-idf/components/esp_system/include/esp_system.h:
 
@@ -69,17 +91,17 @@ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/os.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_types.h:
 
-C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/endian.h:
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h:
 
-C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h:
-
-C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h:
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/list.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpa_debug.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpabuf.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log_internal.h:
 
@@ -97,6 +119,8 @@ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/con
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
+C:/msys32/home/sergey/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h:
+
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
@@ -109,15 +133,57 @@ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/sha512_alt.h:
 
+C:/msys32/home/sergey/esp/esp-idf/components/hal/include/hal/sha_types.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h:
+
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/aes_alt.h:
 
-C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp32/aes.h:
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/aes/esp_aes.h:
 
-C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/aes.h:
+C:/msys32/home/sergey/esp/esp-idf/components/hal/include/hal/aes_types.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/mbedtls/bignum.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pkcs5.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cmac.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/nist_kw.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/des.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ccm.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/arc4.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/common.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpabuf.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/dh_group5.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/md5.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/aes_wrap.h:
 /home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/crypto_mbedtls.c:

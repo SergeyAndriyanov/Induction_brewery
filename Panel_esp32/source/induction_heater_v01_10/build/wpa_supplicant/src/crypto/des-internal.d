@@ -10,15 +10,16 @@ src/crypto/des-internal.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_err.h \
  C:/msys32/home/sergey/esp/esp-idf/components/newlib/platform_include/assert.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_compiler.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
- C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/endian.h \
- C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h \
- C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/list.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpa_debug.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpabuf.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log_internal.h \
- C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/crypto.h
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/crypto.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/des_i.h
 
 C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/includes.h:
 
@@ -40,13 +41,11 @@ C:/msys32/home/sergey/esp/esp-idf/components/newlib/platform_include/assert.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h:
+
 C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
-C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/endian.h:
-
-C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h:
-
-C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h:
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/list.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpa_debug.h:
 
@@ -54,7 +53,11 @@ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpabuf
 
 C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h:
 
+C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h:
+
 C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log_internal.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/crypto.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/des_i.h:
 /home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/des-internal.c:

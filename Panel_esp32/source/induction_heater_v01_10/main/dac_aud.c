@@ -31,6 +31,8 @@
 #include "audiohopsadd.c"
 #include "audiobboilndone.c"
 #include "audioalarmsensor.c"
+#include "audioconnect.c"
+#include "audiodisconnect.c"
 
 //-----------------------------------------------------------------------------//
 audio_info_t sound_wav_info;
@@ -223,6 +225,50 @@ void selectplayaudio(uint8_t numaud)
 
         break;
     }
+
+    case CONNECTWIFI_AUDIO:
+    {
+
+        if (sound_wav_info.startplay == STARTPLAY)
+        {
+            stopplay = 1;
+            while (sound_wav_info.startplay != STOPPLAY)
+            {
+                vTaskDelay(10 / portTICK_PERIOD_MS);
+            }
+        }
+
+        sound_wav_info.bytewrite = 0;
+        sound_wav_info.sampleRate = DACSAMPLERAIT;
+        sound_wav_info.dataLength = sizeof(audioconnect);
+        sound_wav_info.data = (uint8_t *)&audioconnect[0];
+        sound_wav_info.startplay = STARTPLAY;
+
+        break;
+    }
+
+    case DISCONNECTWIFI_AUDIO:
+    {
+
+        if (sound_wav_info.startplay == STARTPLAY)
+        {
+            stopplay = 1;
+            while (sound_wav_info.startplay != STOPPLAY)
+            {
+                vTaskDelay(10 / portTICK_PERIOD_MS);
+            }
+        }
+
+        sound_wav_info.bytewrite = 0;
+        sound_wav_info.sampleRate = DACSAMPLERAIT;
+        sound_wav_info.dataLength = sizeof(audiodisconnect);
+        sound_wav_info.data = (uint8_t *)&audiodisconnect[0];
+        sound_wav_info.startplay = STARTPLAY;
+
+        break;
+    }
+
+
 
     default:
         

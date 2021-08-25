@@ -1,6 +1,7 @@
 port/mbedtls_debug.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/mbedtls_debug.c \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  C:/msys32/home/sergey/esp/induction_heater_v01/build/include/sdkconfig.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log_internal.h \
@@ -8,6 +9,7 @@ port/mbedtls_debug.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
@@ -34,6 +36,8 @@ port/mbedtls_debug.o: \
 
 C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h:
 
+C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h:
+
 C:/msys32/home/sergey/esp/induction_heater_v01/build/include/sdkconfig.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
@@ -47,6 +51,8 @@ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_co
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 

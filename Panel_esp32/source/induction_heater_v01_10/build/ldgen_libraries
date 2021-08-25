@@ -4,6 +4,7 @@ C:/msys32/home/sergey/esp/induction_heater_v01/build/app_trace/libapp_trace.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/bootloader_support/libbootloader_support.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/bt/libbt.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/cbor/libcbor.a
+ C:/msys32/home/sergey/esp/induction_heater_v01/build/cmock/libcmock.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/coap/libcoap.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/console/libconsole.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/cxx/libcxx.a
@@ -20,9 +21,11 @@ C:/msys32/home/sergey/esp/induction_heater_v01/build/app_trace/libapp_trace.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/esp_http_client/libesp_http_client.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/esp_http_server/libesp_http_server.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/esp_https_ota/libesp_https_ota.a
+ C:/msys32/home/sergey/esp/induction_heater_v01/build/esp_hw_support/libesp_hw_support.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/esp_ipc/libesp_ipc.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/esp_local_ctrl/libesp_local_ctrl.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/esp_netif/libesp_netif.a
+ C:/msys32/home/sergey/esp/induction_heater_v01/build/esp_pm/libesp_pm.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/esp_ringbuf/libesp_ringbuf.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/esp_rom/libesp_rom.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/esp_serial_slave_link/libesp_serial_slave_link.a
@@ -35,6 +38,7 @@ C:/msys32/home/sergey/esp/induction_heater_v01/build/app_trace/libapp_trace.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/fatfs/libfatfs.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/freemodbus/libfreemodbus.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/freertos/libfreertos.a
+ C:/msys32/home/sergey/esp/induction_heater_v01/build/hal/libhal.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/heap/libheap.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/idf_test/libidf_test.a
  C:/msys32/home/sergey/esp/induction_heater_v01/build/jsmn/libjsmn.a

@@ -13,6 +13,7 @@ esp_crt_bundle/esp_crt_bundle.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
@@ -33,6 +34,7 @@ esp_crt_bundle/esp_crt_bundle.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
  C:/msys32/home/sergey/esp/esp-idf/components/newlib/platform_include/time.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log_internal.h
 
@@ -61,6 +63,8 @@ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_co
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 
@@ -101,6 +105,8 @@ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pla
 C:/msys32/home/sergey/esp/esp-idf/components/newlib/platform_include/time.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

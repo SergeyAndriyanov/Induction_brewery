@@ -9,6 +9,7 @@ platform/ssl_pm.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/openssl/include/platform/ssl_port.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_types.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  C:/msys32/home/sergey/esp/induction_heater_v01/build/include/sdkconfig.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log_internal.h \
@@ -20,6 +21,7 @@ platform/ssl_pm.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
@@ -45,13 +47,17 @@ platform/ssl_pm.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/entropy.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/sha512_alt.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/hal/include/hal/sha_types.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/aes_alt.h \
- C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp32/aes.h \
- C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/aes.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/aes/esp_aes.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/hal/include/hal/aes_types.h \
  C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h \
- C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/certs.h
+ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/certs.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/openssl/include/openssl/bio.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/openssl/include/openssl/err.h
 
 C:/msys32/home/sergey/esp/esp-idf/components/openssl/include/platform/ssl_pm.h:
 
@@ -70,6 +76,8 @@ C:/msys32/home/sergey/esp/esp-idf/components/openssl/include/platform/ssl_port.h
 C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_types.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h:
 
 C:/msys32/home/sergey/esp/induction_heater_v01/build/include/sdkconfig.h:
 
@@ -92,6 +100,8 @@ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_co
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 
@@ -143,17 +153,25 @@ C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/sha512_alt.h:
 
+C:/msys32/home/sergey/esp/esp-idf/components/hal/include/hal/sha_types.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h:
+
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/aes_alt.h:
 
-C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/esp32/aes.h:
+C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/port/include/aes/esp_aes.h:
 
-C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp32/rom/aes.h:
+C:/msys32/home/sergey/esp/esp-idf/components/hal/include/hal/aes_types.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/certs.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/openssl/include/openssl/bio.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/openssl/include/openssl/err.h:
 /home/sergey/esp/esp-idf/components/openssl/platform/ssl_pm.c:

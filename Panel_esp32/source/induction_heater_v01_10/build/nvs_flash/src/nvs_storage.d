@@ -14,8 +14,10 @@ src/nvs_storage.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/compressed_enum_table.hpp \
  C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/nvs_page.hpp \
  C:/msys32/home/sergey/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/spi_flash/include/esp_spi_flash_counters.h \
  C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/intrusive_list.h \
  C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/nvs_item_hash_list.hpp \
+ C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/partition.hpp \
  C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/nvs_pagemanager.hpp
 
 C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/nvs_storage.hpp:
@@ -46,9 +48,13 @@ C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/nvs_page.hpp:
 
 C:/msys32/home/sergey/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
+C:/msys32/home/sergey/esp/esp-idf/components/spi_flash/include/esp_spi_flash_counters.h:
+
 C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/intrusive_list.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/nvs_item_hash_list.hpp:
+
+C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/partition.hpp:
 
 C:/msys32/home/sergey/esp/esp-idf/components/nvs_flash/src/nvs_pagemanager.hpp:
 /home/sergey/esp/esp-idf/components/nvs_flash/src/nvs_storage.cpp:

@@ -10,13 +10,13 @@ src/common/dpp.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_err.h \
  C:/msys32/home/sergey/esp/esp-idf/components/newlib/platform_include/assert.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_compiler.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h \
  C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
- C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/endian.h \
- C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h \
- C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/list.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpa_debug.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpabuf.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log_internal.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/common/defs.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/base64.h \
@@ -28,7 +28,7 @@ src/common/dpp.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/crypto/sha256.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/common/dpp.h \
  C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/list.h \
- C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/common/wpa_common.h
+ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/esp_supplicant/esp_dpp.h
 
 C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/includes.h:
 
@@ -50,19 +50,19 @@ C:/msys32/home/sergey/esp/esp-idf/components/newlib/platform_include/assert.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_compiler.h:
 
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h:
+
 C:/msys32/home/sergey/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
-C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/endian.h:
-
-C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h:
-
-C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h:
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/list.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpa_debug.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/utils/wpabuf.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/log/include/esp_log_internal.h:
 
@@ -86,5 +86,5 @@ C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/common/dpp.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/utils/list.h:
 
-C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/src/common/wpa_common.h:
+C:/msys32/home/sergey/esp/esp-idf/components/wpa_supplicant/include/esp_supplicant/esp_dpp.h:
 /home/sergey/esp/esp-idf/components/wpa_supplicant/src/common/dpp.c:

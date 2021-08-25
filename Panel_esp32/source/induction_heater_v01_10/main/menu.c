@@ -33,14 +33,16 @@
 #include "nvs.h"
 #include "menu.h"
 #include "wchar.h"
+#include "wifi.h"
 //-----------------------------------------------------------------------------//
 Tparametrmenu parametrmenu;
-const wchar_t menusettname[6][20] = {
+const wchar_t menusettname[7][20] = {
     L"Выбор режима работы\0",
     L"Управление насосами\0",
     L"Пар-ры затирания   \0",
     L"Пар-ры кипячения   \0",
     L"Пар-ры ПИД регул   \0",
+    L"Пар-ры WiFi сети   \0",
     L"                   \0"};
 const wchar_t parametr_mesh_select[12][20] = {
     L"Ввод темпер.Пауз   \0",
@@ -102,6 +104,10 @@ const wchar_t parametr_pid_select[4][20] = {
 uint8_t counterblinr = 0;
 uint8_t show_sim = 0;
 wchar_t messageprocess[21];
+uint32_t donetimemash = 0;
+uint32_t donetimehops = 0;
+uint32_t actualmashpause = 0;
+uint32_t actualhopspause = 0;
 //-----------------------------------------------------------------------------//
 void runtaskmenu()
 {
@@ -123,6 +129,11 @@ void task_menu(void *arg)
         {
             if (dataprocess.dataproc.mode_work == MODE_OFF)
             {
+                actualhopspause = 0;
+                donetimehops = 0;
+                donetimemash = 0;
+                actualmashpause = 0;
+
                 memset(parg->row, 0, SIZESTRBUF);
                 swprintf(parg->row, SIZESTRBUF, L"Режим работы:(Выкл.)");
                 lcdprint(1, 0, parg->row, 20);
@@ -147,6 +158,8 @@ void task_menu(void *arg)
             }
             else if (dataprocess.dataproc.mode_work == MODE_MESH)
             {
+                actualmashpause = mesh_num;
+                donetimemash = (dataprocess.dataproc.mash[mesh_num].time_ms - mesh_act_time)/1000/60;
 
                 switch (parg->submenumesh0)
                 {
@@ -350,7 +363,7 @@ void task_menu(void *arg)
                     swprintf(parg->row, SIZESTRBUF, L"Насос1/2/3 вкл(%i%i%i)  ", pumponof.pump1, pumponof.pump2, pumponof.pump3);
                     lcdprint(2, 0, parg->row, 20);
                     memset(parg->row, 0, SIZESTRBUF);
-                    swprintf(parg->row, SIZESTRBUF, L"Мощн:П1(%03i) П2(%03i)  " , parg->maxpwmreqp1, parg->maxpwmreqp2);
+                    swprintf(parg->row, SIZESTRBUF, L"Мощн:П1(%03i) П2(%03i)  ", parg->maxpwmreqp1, parg->maxpwmreqp2);
                     lcdprint(3, 0, parg->row, 20);
 
                     memset(parg->row, 0, SIZESTRBUF);
@@ -374,6 +387,8 @@ void task_menu(void *arg)
             }
             else if (dataprocess.dataproc.mode_work == MODE_HOPS)
             {
+                actualhopspause = hops_num;
+                donetimehops = (dataprocess.dataproc.hops[hops_num].time_ms - hops_act_time)/1000/60;
 
                 switch (parg->submenuhops0)
                 {
@@ -639,7 +654,7 @@ void task_menu(void *arg)
                 lcdprint(4, 0, parg->row, 20);
                 if (getkeyup())
                 {
-                    if (parg->selectmenusett < 4)
+                    if (parg->selectmenusett < 5)
                     {
                         parg->selectmenusett++;
                     }
@@ -670,11 +685,11 @@ void task_menu(void *arg)
                 {
                     swprintf(parg->row, SIZESTRBUF, L"Нагрев выключен    %S", &simv_blink[show_sim][0]);
                 }
-                else if (parg->tempu8t  == MODE_MESH)
+                else if (parg->tempu8t == MODE_MESH)
                 {
                     swprintf(parg->row, SIZESTRBUF, L"Процесс затир.сусл %S", &simv_blink[show_sim][0]);
                 }
-                else if (parg->tempu8t  == MODE_HOPS)
+                else if (parg->tempu8t == MODE_HOPS)
                 {
                     swprintf(parg->row, SIZESTRBUF, L"Процесс кипяч.сусл %S", &simv_blink[show_sim][0]);
                 }
@@ -682,23 +697,22 @@ void task_menu(void *arg)
 
                 if (getkeyup())
                 {
-                    if (parg->tempu8t  < 2)
+                    if (parg->tempu8t < 2)
                     {
-                        parg->tempu8t ++;
+                        parg->tempu8t++;
                     }
                 }
                 if (getkeydown())
                 {
-                    if (parg->tempu8t  > 0)
+                    if (parg->tempu8t > 0)
                     {
-                        parg->tempu8t --;
-                        
+                        parg->tempu8t--;
                     }
                 }
 
                 if (getkeyenter())
                 {
-                    dataprocess.dataproc.mode_work= parg->tempu8t;
+                    dataprocess.dataproc.mode_work = parg->tempu8t;
                     save_data_process();
                     parg->menusett = 0;
                 }
@@ -2934,6 +2948,76 @@ void task_menu(void *arg)
 
                 break;
             } //parametr pid
+            case 6:
+            {
+                memset(parg->row, 0, SIZESTRBUF);
+                swprintf(parg->row, SIZESTRBUF, L"Параметры WiFi сети ");
+                lcdprint(1, 0, parg->row, 20);
+                memset(parg->row, 0, SIZESTRBUF);
+                swprintf(parg->row, SIZESTRBUF, L"SSID:%s ", paramWifi.paramWifi_STR.wifiSSID);
+                lcdprint(2, 0, parg->row, 20);
+                memset(parg->row, 0, SIZESTRBUF);
+                swprintf(parg->row, SIZESTRBUF, L"PASS:%s   ", paramWifi.paramWifi_STR.wifipasswd);
+                lcdprint(3, 0, parg->row, 20);
+
+                if (paramWifi.paramWifi_STR.wifionoff == 1)
+                {
+                    memset(parg->row, 0, SIZESTRBUF);
+                    if (parg->temp_enterwifi == 1)
+                    {
+                        swprintf(parg->row, SIZESTRBUF, L"WiFi сеть включена %S", &simv_blink[show_sim][0]);
+                    }
+                    else
+                    {
+                        swprintf(parg->row, SIZESTRBUF, L"WiFi сеть включена  ");
+                    }
+
+                    lcdprint(4, 0, parg->row, 20);
+                }
+                else
+                {
+                    memset(parg->row, 0, SIZESTRBUF);
+                    if (parg->temp_enterwifi == 1)
+                    {
+                        swprintf(parg->row, SIZESTRBUF, L"WiFi сеть выключена%S", &simv_blink[show_sim][0]);
+                    }
+                    else
+                    {
+                        swprintf(parg->row, SIZESTRBUF, L"WiFi сеть выключена ");
+                    }
+
+                    lcdprint(4, 0, parg->row, 20);
+                }
+
+                if (getkeyup())
+                {
+                    if (parg->temp_enterwifi == 1)
+                    {
+                        paramWifi.paramWifi_STR.wifionoff = 1;
+                    }
+                }
+
+                if (getkeydown())
+                {
+                    if (parg->temp_enterwifi == 1)
+                    {
+                        paramWifi.paramWifi_STR.wifionoff = 0;
+                    }
+                }
+                if (getkeyenter())
+                {
+                    if (parg->temp_enterwifi == 0)
+                    {
+                        parg->temp_enterwifi = 1;
+                    }
+                    else
+                    {
+                        parg->temp_enterwifi = 0;
+                    }
+                }
+
+                break;
+            }
 
             default:
             {

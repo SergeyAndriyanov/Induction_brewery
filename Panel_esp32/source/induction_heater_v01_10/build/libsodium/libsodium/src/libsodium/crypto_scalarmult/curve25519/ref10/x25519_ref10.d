@@ -1,7 +1,10 @@
 libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/x25519_ref10.o: \
  C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/x25519_ref10.c \
  c:\msys32\home\sergey\esp\esp-idf\components\libsodium\libsodium\src\libsodium\crypto_scalarmult\curve25519\scalarmult_curve25519.h \
- C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/private/curve25519_ref10.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/export.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/private/ed25519_ref10.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/private/ed25519_ref10_fe_25_5.h \
+ C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/private/common.h \
  C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/utils.h \
  C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/export.h \
  C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/x25519_ref10.h \
@@ -9,7 +12,13 @@ libsodium/src/libsodium/crypto_scalarmult/curve25519/ref10/x25519_ref10.o: \
 
 c:\msys32\home\sergey\esp\esp-idf\components\libsodium\libsodium\src\libsodium\crypto_scalarmult\curve25519\scalarmult_curve25519.h:
 
-C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/private/curve25519_ref10.h:
+C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/export.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/private/ed25519_ref10.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/private/ed25519_ref10_fe_25_5.h:
+
+C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/private/common.h:
 
 C:/msys32/home/sergey/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/utils.h:
 

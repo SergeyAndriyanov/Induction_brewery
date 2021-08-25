@@ -56,6 +56,7 @@ extern uint8_t statusmax31865;
 extern uint16_t rtd;
 extern float temperature;
 extern double rtd_average;
+extern uint32_t errormesage;
 
 //-----------------------------------------------------------------------------//
 #define AVERAGETEM 5

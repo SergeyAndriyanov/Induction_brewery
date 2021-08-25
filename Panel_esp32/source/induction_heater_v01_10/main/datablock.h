@@ -49,11 +49,11 @@
 #define MAXPID_D 100
 #define MAXPID_I 100
 
-
 #define KEY_DATAPROCESS (const char*)"dataprocess"
 #define STORAGE_NAMESPACE_P (const char*)"storparamberr"
 
 //-----------------------------------------------------------------------------//
+#pragma pack(push, 1)
 typedef struct
 {
     float temperature_mesh;
@@ -61,13 +61,16 @@ typedef struct
     float temperature_pan2;
     float temperature_mesh_delta;
     float temperature_pan_delta;
-    uint8_t induct1_use;
-    uint8_t induct2_use;
-    uint8_t maxpwm;
+    uint32_t induct1_use;
+    uint32_t induct2_use;
+    uint32_t maxpwm;
     uint32_t time_ms;
-    uint8_t numbermesh;
+    uint32_t numbermesh;
 
 } Tdatapause_mashing;
+#pragma pack(pop)
+
+#pragma pack(push, 1)
 typedef struct
 {
     float temperature_hops;
@@ -75,24 +78,35 @@ typedef struct
     float temperature_pan2;
     float temperature_hops_delta;
     float temperature_pan_delta;
-    uint8_t induct1_use;
-    uint8_t induct2_use;
-    uint8_t maxpwm;
+    uint32_t induct1_use;
+    uint32_t induct2_use;
+    uint32_t maxpwm;
     uint32_t time_ms;
-    uint8_t numberhops;
+    uint32_t numberhops;
 } Tdatahops;
+#pragma pack(pop)
+
+
+#pragma pack(push, 1)
 typedef struct
 {
     Tdatapause_mashing mash[(MAXPAUSMASHING+3)];
     Tdatahops hops[(MAXXOPS+3)];
-    uint8_t mode_work;
+    uint32_t mode_work;
     uint16_t crc;
 } TdataProcess;
+#pragma pack(pop)
+
+#pragma pack(push, 1)
 typedef union
 {
     TdataProcess dataproc;
     uint8_t buf[sizeof(TdataProcess)];
 } TUDataProc;
+#pragma pack(pop)
+
+
+#pragma pack(push, 1)
 typedef struct{
 float pid_p;
 float pid_i;
@@ -103,18 +117,20 @@ float pid_min;
 float pid_out;
 
 }Tpidstr;
+#pragma pack(pop)
 
 
-
+#pragma pack(push, 1)
 typedef struct
 {
 uint8_t pump1;
 uint8_t pump2;
 uint8_t pump3;
 }TPump;
+#pragma pack(pop)
 
 //-----------------------------------------------------------------------------//
-extern TUDataProc dataprocess;
+extern  TUDataProc dataprocess;
 extern uint8_t mesh_num;
 extern uint8_t hops_num;
 extern uint32_t mesh_act_time;
