@@ -1,0 +1,20 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "C:/esp32_prj/esp-idf/components/bootloader/subproject",
+    "build_dir":          "C:/esp32_prj/induction_heater_v01_10/build/bootloader",
+    "config_file":        "C:/esp32_prj/induction_heater_v01_10/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v4.3-dirty",
+    "target":             "esp32",
+    "phy_data_partition": "",
+    "monitor_baud" :      "2000000",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "C:/esp32_prj/esp-idf/components/efuse/Kconfig;C:/esp32_prj/esp-idf/components/esp32/Kconfig;C:/esp32_prj/esp-idf/components/esp_common/Kconfig;C:/esp32_prj/esp-idf/components/esp_system/Kconfig;C:/esp32_prj/esp-idf/components/log/Kconfig;C:/esp32_prj/esp-idf/components/newlib/Kconfig;C:/esp32_prj/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "C:/esp32_prj/esp-idf/components/bootloader/Kconfig.projbuild;C:/esp32_prj/esp-idf/components/esptool_py/Kconfig.projbuild;C:/esp32_prj/esp-idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "C:/esp32_prj/esp-idf/components/bootloader", "C:/esp32_prj/esp-idf/components/bootloader_support", "C:/esp32_prj/esp-idf/components/efuse", "C:/esp32_prj/esp-idf/components/esp32", "C:/esp32_prj/esp-idf/components/esp_common", "C:/esp32_prj/esp-idf/components/esp_hw_support", "C:/esp32_prj/esp-idf/components/esp_rom", "C:/esp32_prj/esp-idf/components/esp_system", "C:/esp32_prj/esp-idf/components/esptool_py", "C:/esp32_prj/esp-idf/components/hal", "C:/esp32_prj/esp-idf/components/log", "C:/esp32_prj/esp-idf/components/bootloader/subproject/main", "C:/esp32_prj/esp-idf/components/bootloader/subproject/components/micro-ecc", "C:/esp32_prj/esp-idf/components/newlib", "C:/esp32_prj/esp-idf/components/partition_table", "C:/esp32_prj/esp-idf/components/soc", "C:/esp32_prj/esp-idf/components/spi_flash", "C:/esp32_prj/esp-idf/components/xtensa", "" ]
+}
